@@ -10,6 +10,17 @@
 #include "tools.hpp"
 
 class game {
+    public:
+        game(const char *myFile);
+        void run();
+    private:
+        //Board* brd;
+        int gSize{};
+        char gType{};
+        ifstream myFile;
+        const char * menu[6] = {
+            "Mark", "Undo", "Redo", "Save Game", "Restore Game", "Quit"
+        };
 
 };
 

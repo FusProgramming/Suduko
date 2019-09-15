@@ -11,6 +11,7 @@ void testSquare();
 int main(int argc, const char * argv[]) {
     banner();
     testState();
+
     testSquare();
     bye();
 }
