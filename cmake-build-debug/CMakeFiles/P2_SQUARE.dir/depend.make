@@ -10,6 +10,7 @@ CMakeFiles/P2_SQUARE.dir/game.cpp.obj: ../game.hpp
 CMakeFiles/P2_SQUARE.dir/game.cpp.obj: ../tools.hpp
 
 CMakeFiles/P2_SQUARE.dir/main.cpp.obj: ../Square.hpp
+CMakeFiles/P2_SQUARE.dir/main.cpp.obj: ../game.hpp
 CMakeFiles/P2_SQUARE.dir/main.cpp.obj: ../main.cpp
 CMakeFiles/P2_SQUARE.dir/main.cpp.obj: ../tools.hpp
 

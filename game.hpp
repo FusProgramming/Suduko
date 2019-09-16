@@ -11,7 +11,7 @@
 
 class game {
     public:
-        game(const char *myFile);
+        game(const char* myFile);
         void run();
     private:
         //Board* brd;
@@ -19,8 +19,9 @@ class game {
         char gType{};
         ifstream myFile;
         const char * menu[6] = {
-            "Mark", "Undo", "Redo", "Save Game", "Restore Game", "Quit"
+            "1. Mark", "2. Undo", "3. Redo", "4. Save Game", "5. Restore Game", "6. Quit"
         };
+        const char * menu2 = "123456";
 
 };
 

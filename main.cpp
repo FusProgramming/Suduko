@@ -3,15 +3,18 @@
 // Program 3: Game
 // File: Square.cpp
 // 9/12/2019
+
 #include "Square.hpp"
+#include "game.hpp"
 void testState();
 void testSquare();
 
 //----------------------------------------------------------------
 int main(int argc, const char * argv[]) {
     banner();
+    game game();
+    game.run();
     testState();
-
     testSquare();
     bye();
 }
