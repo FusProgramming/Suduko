@@ -5,13 +5,17 @@
 // 9/12/2019
 
 #include "Square.hpp"
+#include "game.hpp"
+
 void testState();
 void testSquare();
 
 //----------------------------------------------------------------
 int main(int argc, const char * argv[]) {
     banner();
-
+    string myFile = "puz2.txt";
+    game game(myFile.c_str());
+    game.run();
     testState();
     testSquare();
 }

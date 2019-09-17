@@ -12,7 +12,7 @@
 class Board;
 class game {
     public:
-        game(const char* );
+        game(const char *);
         void run();
     private:
         Board* brd;

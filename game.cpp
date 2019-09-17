@@ -8,15 +8,14 @@
 
 //----------------------------------------------------------------
 game::game(const char * myFile) {
-
-    ifstream fName("puz2.txt");
-    fName.open(myFile);
-    if(!fName.is_open()) { fatal(" "); }
     string str;
+    ifstream fName(myFile);
+    if(fName.is_open()) { fatal("Error"); }
+    fName>> gType;
     size_t found = str.find_first_of(menu2);
     while(found != string::npos) {
         str[found] = gType;
-        found = str.find_first_of(menu2,found+1);
+        found = str.find_first_of(menu2);
     }
 }
 
