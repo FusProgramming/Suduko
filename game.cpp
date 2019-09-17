@@ -9,6 +9,15 @@
 //----------------------------------------------------------------
 game::game(const char * myFile) {
 
+    ifstream fName("puz2.txt");
+    fName.open(myFile);
+    if(!fName.is_open()) { fatal(" "); }
+    string str;
+    size_t found = str.find_first_of(menu2);
+    while(found != string::npos) {
+        str[found] = gType;
+        found = str.find_first_of(menu2,found+1);
+    }
 }
 
 //----------------------------------------------------------------
@@ -16,24 +25,9 @@ void game::run() {
     for(;;) {
         char c = menu_c("Menu", 6, menu, menu2);
         switch(c) {
-            case 1:
-                cout << "Unfinished Section" << endl;
-                break;
-            case 2:
-                cout << "Unfinished Section" << endl;
-                break;
-            case 3:
-                cout << "Unfinished Section" << endl;
-                break;
-            case 4:
-                cout << "Unfinished Section" << endl;
-                break;
-            case 5:
-                cout << "Unfinished Section" << endl;
-                break;
-            case 6:
+            case 'Q':
+                bye();
                 exit(0);
-                break;
             default:
                 cout <<"Enter a Valid Input" << endl;
                 break;
@@ -42,4 +36,6 @@ void game::run() {
     }
 
 }
+
+
 

@@ -9,7 +9,7 @@
 //----------------------------------------------------------------
 State::State(char c) {
     value = c;
-    if(c != 0  && (c >= '1' && c <= '9')) {
+    if(c >= '1' && c <= '9') {
         possList = 0;
         fixed = true;
     } else if(c == '-') {
@@ -20,9 +20,9 @@ State::State(char c) {
 
 //----------------------------------------------------------------
 void State::mark(char ch) {
-    if(fixed) {
+    if(possList) {
         cout << "THIS IS FIXED, VALUE WILL NOT CHANGE. " << endl;
-    } else if(!fixed && value == ch){
+    } else if(!possList && value == ch){
         cout << "SQUARE IS NOT FIXED, BUT PARAMETER NO LONGER POSSIBLE" << endl;
     } else {
         value = ch;
@@ -35,13 +35,13 @@ void State::print() {
     short printList, printMask;
     cout << "Value: " << value;
     cout << " Possibility: ";
-    for(int k = 0; k < 9; k++) {
+    for(int k = 1; k < 9; k++) {
         printList = possList >> 1;
         printMask = 1 << k;
         if((printList & printMask) == 0) {
             cout << '-';
         } else {
-            cout << k + 1;
+            cout << k;
         }
     }
 }

@@ -9,21 +9,20 @@
 
 #include "tools.hpp"
 
+class Board;
 class game {
     public:
-        game(const char* myFile);
+        game(const char* );
         void run();
     private:
-        //Board* brd;
-        int gSize{};
-        char gType{};
-        ifstream myFile;
+        Board* brd;
+        int gSize;
+        char gType;
         const char * menu[6] = {
             "1. Mark", "2. Undo", "3. Redo", "4. Save Game", "5. Restore Game", "6. Quit"
         };
-        const char * menu2 = "123456";
+        const char * menu2 = "MmUuRrSsGgQq";
 
 };
-
 
 #endif //P2_SQUARE_GAME_HPP
