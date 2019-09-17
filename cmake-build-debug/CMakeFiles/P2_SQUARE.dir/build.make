@@ -42,10 +42,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Rob\CLionProjects\Suduko
+CMAKE_SOURCE_DIR = C:\Users\Rob\CLionProjects\P2_Square
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Rob\CLionProjects\Suduko\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Rob\CLionProjects\P2_Square\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/P2_SQUARE.dir/depend.make
@@ -58,55 +58,55 @@ include CMakeFiles/P2_SQUARE.dir/flags.make
 
 CMakeFiles/P2_SQUARE.dir/main.cpp.obj: CMakeFiles/P2_SQUARE.dir/flags.make
 CMakeFiles/P2_SQUARE.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Rob\CLionProjects\Suduko\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/P2_SQUARE.dir/main.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\P2_SQUARE.dir\main.cpp.obj -c C:\Users\Rob\CLionProjects\Suduko\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Rob\CLionProjects\P2_Square\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/P2_SQUARE.dir/main.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\P2_SQUARE.dir\main.cpp.obj -c C:\Users\Rob\CLionProjects\P2_Square\main.cpp
 
 CMakeFiles/P2_SQUARE.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/P2_SQUARE.dir/main.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Rob\CLionProjects\Suduko\main.cpp > CMakeFiles\P2_SQUARE.dir\main.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Rob\CLionProjects\P2_Square\main.cpp > CMakeFiles\P2_SQUARE.dir\main.cpp.i
 
 CMakeFiles/P2_SQUARE.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/P2_SQUARE.dir/main.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rob\CLionProjects\Suduko\main.cpp -o CMakeFiles\P2_SQUARE.dir\main.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rob\CLionProjects\P2_Square\main.cpp -o CMakeFiles\P2_SQUARE.dir\main.cpp.s
 
 CMakeFiles/P2_SQUARE.dir/Square.cpp.obj: CMakeFiles/P2_SQUARE.dir/flags.make
 CMakeFiles/P2_SQUARE.dir/Square.cpp.obj: ../Square.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Rob\CLionProjects\Suduko\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/P2_SQUARE.dir/Square.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\P2_SQUARE.dir\Square.cpp.obj -c C:\Users\Rob\CLionProjects\Suduko\Square.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Rob\CLionProjects\P2_Square\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/P2_SQUARE.dir/Square.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\P2_SQUARE.dir\Square.cpp.obj -c C:\Users\Rob\CLionProjects\P2_Square\Square.cpp
 
 CMakeFiles/P2_SQUARE.dir/Square.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/P2_SQUARE.dir/Square.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Rob\CLionProjects\Suduko\Square.cpp > CMakeFiles\P2_SQUARE.dir\Square.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Rob\CLionProjects\P2_Square\Square.cpp > CMakeFiles\P2_SQUARE.dir\Square.cpp.i
 
 CMakeFiles/P2_SQUARE.dir/Square.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/P2_SQUARE.dir/Square.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rob\CLionProjects\Suduko\Square.cpp -o CMakeFiles\P2_SQUARE.dir\Square.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rob\CLionProjects\P2_Square\Square.cpp -o CMakeFiles\P2_SQUARE.dir\Square.cpp.s
 
 CMakeFiles/P2_SQUARE.dir/tools.cpp.obj: CMakeFiles/P2_SQUARE.dir/flags.make
 CMakeFiles/P2_SQUARE.dir/tools.cpp.obj: ../tools.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Rob\CLionProjects\Suduko\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/P2_SQUARE.dir/tools.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\P2_SQUARE.dir\tools.cpp.obj -c C:\Users\Rob\CLionProjects\Suduko\tools.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Rob\CLionProjects\P2_Square\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/P2_SQUARE.dir/tools.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\P2_SQUARE.dir\tools.cpp.obj -c C:\Users\Rob\CLionProjects\P2_Square\tools.cpp
 
 CMakeFiles/P2_SQUARE.dir/tools.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/P2_SQUARE.dir/tools.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Rob\CLionProjects\Suduko\tools.cpp > CMakeFiles\P2_SQUARE.dir\tools.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Rob\CLionProjects\P2_Square\tools.cpp > CMakeFiles\P2_SQUARE.dir\tools.cpp.i
 
 CMakeFiles/P2_SQUARE.dir/tools.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/P2_SQUARE.dir/tools.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rob\CLionProjects\Suduko\tools.cpp -o CMakeFiles\P2_SQUARE.dir\tools.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rob\CLionProjects\P2_Square\tools.cpp -o CMakeFiles\P2_SQUARE.dir\tools.cpp.s
 
 CMakeFiles/P2_SQUARE.dir/game.cpp.obj: CMakeFiles/P2_SQUARE.dir/flags.make
 CMakeFiles/P2_SQUARE.dir/game.cpp.obj: ../game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Rob\CLionProjects\Suduko\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/P2_SQUARE.dir/game.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\P2_SQUARE.dir\game.cpp.obj -c C:\Users\Rob\CLionProjects\Suduko\game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Rob\CLionProjects\P2_Square\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/P2_SQUARE.dir/game.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\P2_SQUARE.dir\game.cpp.obj -c C:\Users\Rob\CLionProjects\P2_Square\game.cpp
 
 CMakeFiles/P2_SQUARE.dir/game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/P2_SQUARE.dir/game.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Rob\CLionProjects\Suduko\game.cpp > CMakeFiles\P2_SQUARE.dir\game.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Rob\CLionProjects\P2_Square\game.cpp > CMakeFiles\P2_SQUARE.dir\game.cpp.i
 
 CMakeFiles/P2_SQUARE.dir/game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/P2_SQUARE.dir/game.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rob\CLionProjects\Suduko\game.cpp -o CMakeFiles\P2_SQUARE.dir\game.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rob\CLionProjects\P2_Square\game.cpp -o CMakeFiles\P2_SQUARE.dir\game.cpp.s
 
 # Object files for target P2_SQUARE
 P2_SQUARE_OBJECTS = \
@@ -126,7 +126,7 @@ P2_SQUARE.exe: CMakeFiles/P2_SQUARE.dir/build.make
 P2_SQUARE.exe: CMakeFiles/P2_SQUARE.dir/linklibs.rsp
 P2_SQUARE.exe: CMakeFiles/P2_SQUARE.dir/objects1.rsp
 P2_SQUARE.exe: CMakeFiles/P2_SQUARE.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Rob\CLionProjects\Suduko\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable P2_SQUARE.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Rob\CLionProjects\P2_Square\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable P2_SQUARE.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\P2_SQUARE.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -139,6 +139,6 @@ CMakeFiles/P2_SQUARE.dir/clean:
 .PHONY : CMakeFiles/P2_SQUARE.dir/clean
 
 CMakeFiles/P2_SQUARE.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Rob\CLionProjects\Suduko C:\Users\Rob\CLionProjects\Suduko C:\Users\Rob\CLionProjects\Suduko\cmake-build-debug C:\Users\Rob\CLionProjects\Suduko\cmake-build-debug C:\Users\Rob\CLionProjects\Suduko\cmake-build-debug\CMakeFiles\P2_SQUARE.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Rob\CLionProjects\P2_Square C:\Users\Rob\CLionProjects\P2_Square C:\Users\Rob\CLionProjects\P2_Square\cmake-build-debug C:\Users\Rob\CLionProjects\P2_Square\cmake-build-debug C:\Users\Rob\CLionProjects\P2_Square\cmake-build-debug\CMakeFiles\P2_SQUARE.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/P2_SQUARE.dir/depend
 

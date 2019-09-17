@@ -6,15 +6,21 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Rob/CLionProjects/Suduko/game.cpp
-game.hpp
-C:/Users/Rob/CLionProjects/Suduko/game.hpp
-
-C:/Users/Rob/CLionProjects/Suduko/game.hpp
+C:/Users/Rob/CLionProjects/P2_Square/Square.hpp
 tools.hpp
-C:/Users/Rob/CLionProjects/Suduko/tools.hpp
+C:/Users/Rob/CLionProjects/P2_Square/tools.hpp
 
-C:/Users/Rob/CLionProjects/Suduko/tools.hpp
+C:/Users/Rob/CLionProjects/P2_Square/game.hpp
+tools.hpp
+C:/Users/Rob/CLionProjects/P2_Square/tools.hpp
+
+C:/Users/Rob/CLionProjects/P2_Square/main.cpp
+Square.hpp
+C:/Users/Rob/CLionProjects/P2_Square/Square.hpp
+game.hpp
+C:/Users/Rob/CLionProjects/P2_Square/game.hpp
+
+C:/Users/Rob/CLionProjects/P2_Square/tools.hpp
 iostream
 -
 fstream
