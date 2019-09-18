@@ -20,10 +20,8 @@ State::State(char c) {
 
 //----------------------------------------------------------------
 void State::mark(char ch) {
-    if(possList) {
+    if(fixed) {
         cout << "THIS IS FIXED, VALUE WILL NOT CHANGE. " << endl;
-    } else if(!possList && value == ch){
-        cout << "SQUARE IS NOT FIXED, BUT PARAMETER NO LONGER POSSIBLE" << endl;
     } else {
         value = ch;
         possList = 0;
@@ -58,8 +56,15 @@ Square::~Square() {
 
 //----------------------------------------------------------------
 void Square::mark(char ch) {
+    char c;
+    cout << "Enter Value" << endl;
+    cin >> c;
+    if(c < '1' && c > '9') {
+        cout <<"Please choose another value" << endl;
+        cin >> c;
+    }
     cout << "PossList Before: " << possList << endl;
-    State::mark(ch);
+    State::mark(c);
     cout << "PossList After: " << possList << endl;
 }
 

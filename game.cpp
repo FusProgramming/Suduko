@@ -8,32 +8,44 @@
 
 //----------------------------------------------------------------
 game::game(const char * myFile) {
-    string str;
-    ifstream fName(myFile);
-    if(fName.is_open()) { fatal("Error"); }
-    fName>> gType;
-    size_t found = str.find_first_of(menu2);
-    while(found != string::npos) {
-        str[found] = gType;
-        found = str.find_first_of(menu2);
+    char x;
+    string legal = "TtDdSs";
+    fName.open(myFile);
+    if(!fName.is_open()) { fatal("Error, File will not open"); }
+    fName >> x;
+    if(legal.find_first_of(x)==string::npos) {
+        fatal("Invalid Type in the Game");
+    } else if(legal.find_first_of(x)!=string::npos) {
+        gType = x;
+        cout << gType;
     }
 }
 
 //----------------------------------------------------------------
 void game::run() {
     for(;;) {
-        char c = menu_c("Menu", 6, menu, menu2);
+        char c = menu_c("Menu", 6, menu, menuX);
         switch(c) {
-            case 'Q':
+            case 'Q' | 'q':
                 bye();
                 exit(0);
+            case 'M' | 'm':
+                cout << "Mark - Unfinished " << endl;
+                break;
+            case 'R' | 'r':
+                cout << "Redo - Unfinished" << endl;
+                break;
+            case 'S' | 's':
+                cout << "Save - Unfinished" << endl;
+                break;
+            case 'T' | 't':
+                cout << "Restore - Unfinished" << endl;
+                break;
             default:
                 cout <<"Enter a Valid Input" << endl;
                 break;
-
         }
     }
-
 }
 
 

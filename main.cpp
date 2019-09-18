@@ -16,8 +16,7 @@ int main(int argc, const char * argv[]) {
     string myFile = "puz1.txt";
     game game(myFile.c_str());
     game.run();
-    testState();
-    testSquare();
+
 }
 
 //----------------------------------------------------------------
