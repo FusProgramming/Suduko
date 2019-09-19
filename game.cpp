@@ -26,19 +26,25 @@ void game::run() {
     for(;;) {
         char c = menu_c("Menu", 6, menu, menuX);
         switch(c) {
-            case 'Q' | 'q':
+            case 'Q':
+            case 'q':
                 bye();
                 exit(0);
-            case 'M' | 'm':
+                break;
+            case 'M':
+            case 'm':
                 cout << "Mark - Unfinished " << endl;
                 break;
-            case 'R' | 'r':
+            case 'R':
+            case 'r':
                 cout << "Redo - Unfinished" << endl;
                 break;
-            case 'S' | 's':
+            case 'S':
+            case 's':
                 cout << "Save - Unfinished" << endl;
                 break;
-            case 'T' | 't':
+            case 'T':
+            case 't':
                 cout << "Restore - Unfinished" << endl;
                 break;
             default:
