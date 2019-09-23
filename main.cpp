@@ -6,17 +6,17 @@
 
 #include "Square.hpp"
 #include "game.hpp"
+#include "Board.hpp"
 
 void testState();
 void testSquare();
+void testBoard(ifstream& myFile);
 
 //----------------------------------------------------------------
 int main(int argc, const char * argv[]) {
     banner();
     string myFile = "puz1.txt";
-    game game(myFile.c_str());
-    game.run();
-
+    testBoard((ifstream&) "puz1.txt");
 }
 
 //----------------------------------------------------------------
@@ -49,4 +49,9 @@ void testSquare() {
     testSq3.mark('-');
     cout << testSq3 << endl;
 
+}
+
+void testBoard(ifstream& myFile) {
+    Board board(myFile);
+    board.print();
 }

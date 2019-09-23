@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Rob/CLionProjects/P2_Square/Board.cpp">
+			<Option target="P2_SQUARE"/>
+		</Unit>
+		<Unit filename="C:/Users/Rob/CLionProjects/P2_Square/Board.hpp">
+			<Option target="P2_SQUARE"/>
+		</Unit>
 		<Unit filename="C:/Users/Rob/CLionProjects/P2_Square/Square.cpp">
 			<Option target="P2_SQUARE"/>
 		</Unit>

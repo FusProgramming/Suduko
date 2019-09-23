@@ -122,6 +122,33 @@ P2_SQUARE/fast:
 	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/build
 .PHONY : P2_SQUARE/fast
 
+Board.obj: Board.cpp.obj
+
+.PHONY : Board.obj
+
+# target to build an object file
+Board.cpp.obj:
+	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/Board.cpp.obj
+.PHONY : Board.cpp.obj
+
+Board.i: Board.cpp.i
+
+.PHONY : Board.i
+
+# target to preprocess a source file
+Board.cpp.i:
+	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/Board.cpp.i
+.PHONY : Board.cpp.i
+
+Board.s: Board.cpp.s
+
+.PHONY : Board.s
+
+# target to generate assembly for a file
+Board.cpp.s:
+	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/Board.cpp.s
+.PHONY : Board.cpp.s
+
 Square.obj: Square.cpp.obj
 
 .PHONY : Square.obj
@@ -239,6 +266,9 @@ help:
 	@echo ... P2_SQUARE
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Board.obj
+	@echo ... Board.i
+	@echo ... Board.s
 	@echo ... Square.obj
 	@echo ... Square.i
 	@echo ... Square.s
