@@ -77,8 +77,8 @@ fatal (const char* format, ...)
     vfprintf(stderr, format, vargs);
     fprintf(stderr, "\n");
     fputs( "\n Error exit; press '.' and 'Enter' to continue", stderr );
-    while (getchar() != '.')  // tight loop  ;
-        exit(1);
+    while (getchar() != '.');  // tight loop
+    exit(1);
 }
 
 // ----------------------------------------------------------------------------

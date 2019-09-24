@@ -7,26 +7,25 @@
 #include "Board.hpp"
 
 //----------------------------------------------------------------
-Board::Board(ifstream& myFile) {
+Board::Board(int n, ifstream &myFile)  {
     cout << "Board Constructing" << endl;
+    fName.open("puz1.txt");
+    if(!fName.is_open()) fatal("Error Opening File");
     getPuzzle();
 
 }
 //----------------------------------------------------------------
 void Board::getPuzzle() {
     char ch;
-    int sub = 0;
-    for(int j = 0; j < n; j++) {
-        for(int k = 0; k < n ; k++) {
-            fName >> ch;
-            if((ch > '0' && ch < '10') || ch == left) {
+    int sub =0;
+    for(int j = 1; j < n; j++) {
+        for(int k = 1; k < n; k++) {
+            fName >>ch;
+            if((ch > '0' && ch <= '9') || ch == left) {
                 Square Sq(ch,j,k);
                 brd[sub] = Sq;
-                if(k == 9) {
-                    ch = '\n';
-                }
+                sub++;
             }
-
 
         }
     }
@@ -36,6 +35,7 @@ Square& Board::sub(int j, int k) {
     int sub;
     sub = (j - 1) * 9 + (k + 1);
     return brd[sub];
+
 }
 
 Board::~Board() {
@@ -44,8 +44,11 @@ Board::~Board() {
 
 
 void Board::print() {
-    for(int n = 0; n < 81; n++){
-        if(n != 0 && n % 9 == 0) cout << '\n';
-        cout << brd[n];
+
+    for(int j = 0; j <= 9; j++) {
+        for(int k = 0; k <= 9; k++) {
+            cout << brd[sub(j,k)] << endl;
+        }
+
     }
 }

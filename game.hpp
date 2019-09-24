@@ -8,8 +8,8 @@
 #define P2_SQUARE_GAME_HPP
 
 #include "tools.hpp"
+#include "Board.hpp"
 
-class Board;
 class game {
     public:
         game(const char * );

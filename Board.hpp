@@ -10,18 +10,17 @@
 #include "tools.hpp"
 #include "Square.hpp"
 
-#define nSq (9 * 9)
+
 
 class Board {
 public:
-    Board(ifstream& myFile);
-    void getPuzzle();
-    Square& sub(int j, int k);
+    Board(int n, ifstream &myFile);
     ~Board();
+    Square& sub(int j, int k);
     void print();
 private:
-    int n = 9;
-    Square brd[81];
+    Board* brd;
+    void getPuzzle(int n);
     ifstream fName;
     short int left = '-';
 

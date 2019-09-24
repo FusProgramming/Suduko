@@ -31,6 +31,7 @@ void State::mark(char ch) {
 //----------------------------------------------------------------
 void State::print() {
     short printList, printMask;
+    cout << "test5" << endl;
     cout << "Value: " << value;
     cout << " Possibility: ";
     for(int k = 1; k < 9; k++) {
@@ -46,12 +47,12 @@ void State::print() {
 
 //----------------------------------------------------------------
 Square::Square(char c, short int row, short int col) : State(c), row(row), col(col) {
-    cerr << "Square: [" << row << ", " << col << "] Constructed" << endl;
+    cout << "Square: [" << row << ", " << col << "] Constructed" << endl;
 }
 
 //----------------------------------------------------------------
 Square::~Square() {
-    cerr << "Deleting Square: [" << row << ", " << col << "]" << endl;
+    cout << "Deleting Square: [" << row << ", " << col << "]" << endl;
 }
 
 //----------------------------------------------------------------

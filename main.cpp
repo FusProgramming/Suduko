@@ -10,13 +10,15 @@
 
 void testState();
 void testSquare();
-void testBoard(ifstream& myFile);
+void testBoard(int n, ifstream& myFile);
 
 //----------------------------------------------------------------
 int main(int argc, const char * argv[]) {
     banner();
-    string myFile = "puz1.txt";
-    testBoard((ifstream&) "puz1.txt");
+    int n = 0;
+    const char *myFile = "puz1.txt";
+    testBoard(n, (ifstream &) myFile);
+
 }
 
 //----------------------------------------------------------------
@@ -37,7 +39,7 @@ void testState() {
 void testSquare() {
     cout << "\n\tUnit Testing Square" << endl
          << "----------------------------------------------------------------" << endl;
-    Square testSq('1', 0,0);
+    Square testSq('9', 1,1);
     cout << testSq << endl;
     testSq.mark('2');
     Square testSq2('-', 3,2);
@@ -51,7 +53,7 @@ void testSquare() {
 
 }
 
-void testBoard(ifstream& myFile) {
-    Board board(myFile);
+void testBoard(int n, ifstream& myFile) {
+    Board board(n, myFile);
     board.print();
 }
