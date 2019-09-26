@@ -38,8 +38,7 @@ inline ostream& operator<< (ostream& out, State st) {
     return out;
 }
 inline ostream& operator<< (ostream& out, Square sq) {
-    sq.print(out);
-    return out;
+    return sq.print(out);
 }
 
 #endif //P1_STATE_STATE_HPP

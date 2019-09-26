@@ -14,6 +14,7 @@ class game {
     public:
         game(const char * );
         void run();
+        void newGame(const char*);
     private:
         ifstream fName;
         Board* brd;

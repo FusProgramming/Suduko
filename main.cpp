@@ -10,20 +10,23 @@
 
 void testState();
 void testSquare();
-void testBoard(int n, ifstream& myFile);
+void testBoard(int n, const char* myFile);
 
 //----------------------------------------------------------------
 int main(int argc, const char * argv[]) {
     banner();
-    int n = 0;
-    const char *myFile = "puz1.txt";
-    testBoard(n, (ifstream &) myFile);
+    int n = 9;
+    string myFile = "puz1.txt";
+    testBoard(n, myFile.c_str());
+    testSquare();
+    game game(myFile.c_str());
+    game.run();
 
 }
 
 //----------------------------------------------------------------
 void testState() {
-    State testFixed('1');
+    State testFixed('0');
     State testUnfixed('-');
     cout << "\n\tUnit Testing State" << endl
          << "----------------------------------------------------------------" << endl;
@@ -52,8 +55,8 @@ void testSquare() {
     cout << testSq3 << endl;
 
 }
-
-void testBoard(int n, ifstream& myFile) {
+//----------------------------------------------------------------
+void testBoard(int n, const char* myFile) {
     Board board(n, myFile);
     board.print();
 }

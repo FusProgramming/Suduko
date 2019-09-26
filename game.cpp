@@ -18,9 +18,21 @@ game::game(const char * myFile) {
     } else if(legal.find_first_of(x)!=string::npos) {
         gType = x;
         cout << gType;
+        newGame(myFile);
     }
 }
-
+//----------------------------------------------------------------
+void game::newGame(const char* myFile) {
+    if(gType =='t') {
+        gSize= 9;
+    } else if(gType == 'd') {
+        cerr << "Empty else Statement" << endl;
+        fatal("Empty statement");
+    } else if(gType == 's'){
+        gSize= 6;
+    }
+    brd = new Board(gSize, myFile);
+}
 //----------------------------------------------------------------
 void game::run() {
     for(;;) {
@@ -30,7 +42,6 @@ void game::run() {
             case 'q':
                 bye();
                 exit(0);
-                break;
             case 'M':
             case 'm':
                 cout << "Mark - Unfinished " << endl;

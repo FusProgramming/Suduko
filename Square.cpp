@@ -31,7 +31,6 @@ void State::mark(char ch) {
 //----------------------------------------------------------------
 void State::print() {
     short printList, printMask;
-    cout << "test5" << endl;
     cout << "Value: " << value;
     cout << " Possibility: ";
     for(int k = 1; k < 9; k++) {
@@ -47,25 +46,24 @@ void State::print() {
 
 //----------------------------------------------------------------
 Square::Square(char c, short int row, short int col) : State(c), row(row), col(col) {
-    cout << "Square: [" << row << ", " << col << "] Constructed" << endl;
+    cout << "Square: [" << row << ", " << col << "] Constructed " ;
 }
 
 //----------------------------------------------------------------
 Square::~Square() {
-    cout << "Deleting Square: [" << row << ", " << col << "]" << endl;
+    cout << " Deleting Square: [" << row << ", " << col << "]" << endl;
 }
 
 //----------------------------------------------------------------
 void Square::mark(char ch) {
-    char c;
     cout << "Enter Value" << endl;
-    cin >> c;
-    if(c < '1' && c > '9') {
+    cin >> ch;
+    if(ch < '1' && ch > '9') {
         cout <<"Please choose another value" << endl;
-        cin >> c;
+        cin >> ch;
     }
     cout << "PossList Before: " << possList << endl;
-    State::mark(c);
+    State::mark(ch);
     cout << "PossList After: " << possList << endl;
 }
 

@@ -16,15 +16,14 @@
       <change beforePath="$PROJECT_DIR$/Board.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Board.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Board.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Board.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Square.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Square.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Square.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Square.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/Square.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/Square.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/tools.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/tools.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/game.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/game.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tools.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/puz1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/puz1.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,14 +50,16 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Rob\CLionProjects\P2_Square\cmake-build-debug" />
+      <recent name="C:\Users\Rob\CLionProjects\P2_Square" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Rob\CLionProjects\P2_Square\cmake-build-debug" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Rob\CLionProjects\P2_Square" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -97,7 +98,8 @@
       <workItem from="1568682144749" duration="129000" />
       <workItem from="1568682284658" duration="6821000" />
       <workItem from="1568752171942" duration="13063000" />
-      <workItem from="1568863716356" duration="26075000" />
+      <workItem from="1568863716356" duration="26706000" />
+      <workItem from="1569463833002" duration="9972000" />
     </task>
     <task id="LOCAL-00001" summary="Broken Commit for Game Too Tired to fix">
       <created>1568526355219</created>
@@ -141,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569212276691</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="p4 - Board. Broken Code. In Progress almost done">
+      <created>1569304972603</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1569304972603</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +174,7 @@
     <MESSAGE value="P3 - Game  Working Code." />
     <MESSAGE value="P3 - Game  Working Code. Fixed P2 Mark" />
     <MESSAGE value="p4 - Board. Broken Code. In Progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="p4 - Board. Broken Code. In Progress" />
+    <MESSAGE value="p4 - Board. Broken Code. In Progress almost done" />
+    <option name="LAST_COMMIT_MESSAGE" value="p4 - Board. Broken Code. In Progress almost done" />
   </component>
 </project>

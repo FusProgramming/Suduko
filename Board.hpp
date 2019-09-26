@@ -13,16 +13,17 @@
 
 
 class Board {
-public:
-    Board(int n, ifstream &myFile);
-    ~Board();
-    Square& sub(int j, int k);
-    void print();
-private:
-    Board* brd;
-    void getPuzzle(int n);
-    ifstream fName;
-    short int left = '-';
+    public:
+        Board(int n, const char* myFile);
+        ~Board();
+        Square& sub(int j, int k);
+        void print();
+    private:
+        int N;
+        Square* brd;
+        void getPuzzle(int n);
+        ifstream fName;
+        short int left = '-';
 
 };
 
