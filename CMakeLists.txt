@@ -3,4 +3,4 @@ project(P2_SQUARE)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(P2_SQUARE main.cpp Square.cpp Square.hpp tools.cpp tools.hpp game.cpp game.hpp Board.cpp Board.hpp)
+add_executable(P2_SQUARE main.cpp Square.cpp Square.hpp tools.cpp tools.hpp game.cpp game.hpp Board.cpp Board.hpp Cluster.cpp Cluster.hpp)

@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/P2_SQUARE.dir/tools.cpp.obj"
   "CMakeFiles/P2_SQUARE.dir/game.cpp.obj"
   "CMakeFiles/P2_SQUARE.dir/Board.cpp.obj"
+  "CMakeFiles/P2_SQUARE.dir/Cluster.cpp.obj"
   "P2_SQUARE.pdb"
   "P2_SQUARE.exe"
   "P2_SQUARE.exe.manifest"

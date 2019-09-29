@@ -149,6 +149,33 @@ Board.cpp.s:
 	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/Board.cpp.s
 .PHONY : Board.cpp.s
 
+Cluster.obj: Cluster.cpp.obj
+
+.PHONY : Cluster.obj
+
+# target to build an object file
+Cluster.cpp.obj:
+	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/Cluster.cpp.obj
+.PHONY : Cluster.cpp.obj
+
+Cluster.i: Cluster.cpp.i
+
+.PHONY : Cluster.i
+
+# target to preprocess a source file
+Cluster.cpp.i:
+	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/Cluster.cpp.i
+.PHONY : Cluster.cpp.i
+
+Cluster.s: Cluster.cpp.s
+
+.PHONY : Cluster.s
+
+# target to generate assembly for a file
+Cluster.cpp.s:
+	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/Cluster.cpp.s
+.PHONY : Cluster.cpp.s
+
 Square.obj: Square.cpp.obj
 
 .PHONY : Square.obj
@@ -269,6 +296,9 @@ help:
 	@echo ... Board.obj
 	@echo ... Board.i
 	@echo ... Board.s
+	@echo ... Cluster.obj
+	@echo ... Cluster.i
+	@echo ... Cluster.s
 	@echo ... Square.obj
 	@echo ... Square.i
 	@echo ... Square.s
