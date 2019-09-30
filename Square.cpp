@@ -66,7 +66,10 @@ void Square::mark(char ch) {
     State::mark(ch);
     cout << "PossList After: " << possList << endl;
 }
+//----------------------------------------------------------------
+void Square::addCluster() {
 
+}
 //----------------------------------------------------------------
 ostream& Square::print(ostream& out) {
     out << "Square: [" << row << ", " << col << "] ";

@@ -29,6 +29,7 @@ class Square : public State {
         void mark(char ch);
         ostream& print(ostream&);
         char getValue(){ return value;}
+        void addCluster();
     private:
         short int col, row;
 };

@@ -11,11 +11,11 @@ class Cluster {
     public:
         Cluster(const char *, Square*[9]);
         void print();
-        void shoop();
-        
+        void shoop(char val);
+
     private:
         const char* cType;
-        Square* sArray[9];
+        Square* sArr[9];
 
 };
 
