@@ -6,7 +6,12 @@
 #ifndef P1_STATE_STATE_HPP
 #define P1_STATE_STATE_HPP
 
+
+
 #include "tools.hpp"
+
+
+class Cluster;
 
 class State {
     public:
@@ -29,9 +34,12 @@ class Square : public State {
         void mark(char ch);
         ostream& print(ostream&);
         char getValue(){ return value;}
-        void addCluster();
+        void addCluster(Cluster * pCl);
+        void turnOff(int n);
     private:
         short int col, row;
+        vector<Cluster*> clues;
+
 };
 
 inline ostream& operator<< (ostream& out, State st) {

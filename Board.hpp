@@ -10,7 +10,9 @@
 #include "tools.hpp"
 #include "Square.hpp"
 
-
+enum ClusterT {
+    box, row, col
+};
 
 class Board {
     public:

@@ -12,10 +12,10 @@ class Cluster {
         Cluster(const char *, Square*[9]);
         void print();
         void shoop(char val);
-
     private:
         const char* cType;
         Square* sArr[9];
+
 
 };
 

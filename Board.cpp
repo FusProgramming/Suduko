@@ -40,7 +40,8 @@ Square& Board::sub(int j, int k) {
 
 //----------------------------------------------------------------
 Board::~Board() {
-    cout << "Destructed Board" << endl;
+    delete[] brd;
+    cout << "Destructed Board" <<  endl;
 }
 
 //----------------------------------------------------------------

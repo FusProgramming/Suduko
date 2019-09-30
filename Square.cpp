@@ -5,6 +5,7 @@
 // 9/12/2019
 
 #include "Square.hpp"
+#include "Cluster.hpp"
 
 //----------------------------------------------------------------
 State::State(char c) {
@@ -67,7 +68,11 @@ void Square::mark(char ch) {
     cout << "PossList After: " << possList << endl;
 }
 //----------------------------------------------------------------
-void Square::addCluster() {
+void Square::addCluster(Cluster* pCl) {
+    clues.push_back(pCl);
+}
+//----------------------------------------------------------------
+void Square::turnOff(int n) {
 
 }
 //----------------------------------------------------------------

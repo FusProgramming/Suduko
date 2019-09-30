@@ -6,19 +6,35 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/Rob/CLionProjects/P2_Square/Board.cpp
+Board.hpp
+C:/Users/Rob/CLionProjects/P2_Square/Board.hpp
+
 C:/Users/Rob/CLionProjects/P2_Square/Board.hpp
 tools.hpp
 C:/Users/Rob/CLionProjects/P2_Square/tools.hpp
 Square.hpp
 C:/Users/Rob/CLionProjects/P2_Square/Square.hpp
 
+C:/Users/Rob/CLionProjects/P2_Square/Cluster.cpp
+Cluster.hpp
+C:/Users/Rob/CLionProjects/P2_Square/Cluster.hpp
+
+C:/Users/Rob/CLionProjects/P2_Square/Cluster.hpp
+Square.hpp
+C:/Users/Rob/CLionProjects/P2_Square/Square.hpp
+
 C:/Users/Rob/CLionProjects/P2_Square/Square.cpp
 Square.hpp
 C:/Users/Rob/CLionProjects/P2_Square/Square.hpp
+Cluster.hpp
+C:/Users/Rob/CLionProjects/P2_Square/Cluster.hpp
 
 C:/Users/Rob/CLionProjects/P2_Square/Square.hpp
 tools.hpp
 C:/Users/Rob/CLionProjects/P2_Square/tools.hpp
+Cluster.hpp
+C:/Users/Rob/CLionProjects/P2_Square/Cluster.hpp
 
 C:/Users/Rob/CLionProjects/P2_Square/game.cpp
 game.hpp
@@ -27,6 +43,14 @@ C:/Users/Rob/CLionProjects/P2_Square/game.hpp
 C:/Users/Rob/CLionProjects/P2_Square/game.hpp
 tools.hpp
 C:/Users/Rob/CLionProjects/P2_Square/tools.hpp
+Board.hpp
+C:/Users/Rob/CLionProjects/P2_Square/Board.hpp
+
+C:/Users/Rob/CLionProjects/P2_Square/main.cpp
+Square.hpp
+C:/Users/Rob/CLionProjects/P2_Square/Square.hpp
+game.hpp
+C:/Users/Rob/CLionProjects/P2_Square/game.hpp
 Board.hpp
 C:/Users/Rob/CLionProjects/P2_Square/Board.hpp
 
