@@ -11,7 +11,7 @@
 #include "Square.hpp"
 
 enum ClusterT {
-    box, row, col
+    row, col, box
 };
 
 class Board {
@@ -20,12 +20,20 @@ class Board {
         ~Board();
         Square& sub(int j, int k);
         void print();
+        void printCluster(ostream&);
     private:
         int N;
         Square* brd;
         void getPuzzle(int n);
         ifstream fName;
         short int left = '-';
+        vector<Cluster*> clusters;
+        void makeClusters();
+        void createRow();
+        void createColumn();
+        void createBox();
+
+
 
 };
 

@@ -59,4 +59,6 @@ void testSquare() {
 void testBoard(int n, const char* myFile) {
     Board board(n, myFile);
     board.print();
+    cout << endl;
+    board.printCluster(cout);
 }

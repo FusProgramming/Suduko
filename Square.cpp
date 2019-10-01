@@ -73,7 +73,9 @@ void Square::addCluster(Cluster* pCl) {
 }
 //----------------------------------------------------------------
 void Square::turnOff(int n) {
-
+    short mask = 1 << n;
+    possList = possList & ~mask;
+    possList++;
 }
 //----------------------------------------------------------------
 ostream& Square::print(ostream& out) {
