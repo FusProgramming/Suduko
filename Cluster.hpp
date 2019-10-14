@@ -6,10 +6,6 @@
 #define P2_SQUARE_CLUSTER_HPP
 
 #include "Square.hpp"
-
-
-
-
 class Cluster {
     public:
         Cluster(const char *, Square*[9]);

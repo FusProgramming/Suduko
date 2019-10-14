@@ -21,17 +21,17 @@ class Board {
         Square& sub(int j, int k);
         void print();
         void printCluster(ostream&);
-    private:
+        void makeClusters();
+private:
         int N;
         Square* brd;
         void getPuzzle(int n);
         ifstream fName;
         short int left = '-';
         vector<Cluster*> clusters;
-        void makeClusters();
-        void createRow();
-        void createColumn();
-        void createBox();
+        void createRow(short j);
+        void createColumn(short k);
+        void createBox(short j, short k);
 
 
 

@@ -42,47 +42,40 @@ Square& Board::sub(int j, int k) {
 }
 //----------------------------------------------------------------
 void Board::makeClusters() {
-    //Creates Clusters of Rows
-    for(int sub = 0; sub < 81; sub+=9){
-        Square* rows[9];
-        for(int n = 0; n < 9; n++){
-            rows[n] = &brd[sub + n];
+    short j, k;
+    for(j = 1; j <= 9;j++) {
+        createRow(j);
+    }
+    for(k = 1; k <= 9; k++) {
+        createColumn(k);
+    }
+    createBox(j,k);
+
+}
+
+//----------------------------------------------------------------
+void Board::createRow(short j) {
+    Square *rows[9];
+    for(short p = j; p<= j ; p++) {
+        for(short q = 1; q<= 9; q++) {
+            rows[q-1] = &sub(p,q);
         }
         clusters.push_back(new Cluster("row", rows));
+    }
+}
 
+//----------------------------------------------------------------
+void Board::createColumn(short k) {
+    Square *cols[9];
+    for(short q = k; q <= k; q++) {
+        for(short p =1; p <= 9; p++) {
+            cols[p-1] = &sub(p,q);
     }
-    //Creates Clusters of Columns
-    for(int n = 0; n < 9; n++){
-        Square* cols[9];
-        for(int sub = 0; sub < 81; sub+=9){
-            cols[sub/9] = &brd[n + sub];
-        }
-        clusters.push_back(new Cluster("col", cols));
-    }
-    //TODO:Create cluster of boxes
-    for(int n = 0; n <= 54; n+=27){
-        for(int k = n; k <= n+6; k+=3){
-            Square* box[9];
-            int sub = 0;
-            for(int row = k; row <= k + 20; row+=9){
-                for(int cell = 0; cell < 3; cell++){
-                    box[sub] = &brd[row + cell];
-                    sub++;
-                }
-            }
-            clusters.push_back( new Cluster("BOX", box));
-        }
+    clusters.push_back(new Cluster("row", cols));
     }
 }
 //----------------------------------------------------------------
-void Board::createRow() {
-}
-//----------------------------------------------------------------
-void Board::createColumn() {
-
-}
-//----------------------------------------------------------------
-void Board::createBox() {
+void Board::createBox(short j, short k) {
 
 }
 
@@ -100,7 +93,6 @@ void Board::print() {
 }
 void Board::printCluster(ostream& out) {
     for (Cluster* cl : clusters) {
-        cout << endl;
         out << *cl << endl;
     }
 }

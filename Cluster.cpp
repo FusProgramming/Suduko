@@ -27,6 +27,7 @@ void Cluster::shoop(char val) {
 void Cluster::print() {
     for(Square* Sq : sArr) {
         Sq->print(cout);
+        cout << endl;
     }
 }
 

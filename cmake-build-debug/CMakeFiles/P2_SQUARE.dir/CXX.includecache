@@ -6,27 +6,27 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Rob/CLionProjects/P2_Square/Board.cpp
+C:/Users/Rob/CLionProjects/Suduko/Board.cpp
 Board.hpp
-C:/Users/Rob/CLionProjects/P2_Square/Board.hpp
+C:/Users/Rob/CLionProjects/Suduko/Board.hpp
 Cluster.hpp
-C:/Users/Rob/CLionProjects/P2_Square/Cluster.hpp
+C:/Users/Rob/CLionProjects/Suduko/Cluster.hpp
 
-C:/Users/Rob/CLionProjects/P2_Square/Board.hpp
+C:/Users/Rob/CLionProjects/Suduko/Board.hpp
 tools.hpp
-C:/Users/Rob/CLionProjects/P2_Square/tools.hpp
+C:/Users/Rob/CLionProjects/Suduko/tools.hpp
 Square.hpp
-C:/Users/Rob/CLionProjects/P2_Square/Square.hpp
+C:/Users/Rob/CLionProjects/Suduko/Square.hpp
 
-C:/Users/Rob/CLionProjects/P2_Square/Cluster.hpp
+C:/Users/Rob/CLionProjects/Suduko/Cluster.hpp
 Square.hpp
-C:/Users/Rob/CLionProjects/P2_Square/Square.hpp
+C:/Users/Rob/CLionProjects/Suduko/Square.hpp
 
-C:/Users/Rob/CLionProjects/P2_Square/Square.hpp
+C:/Users/Rob/CLionProjects/Suduko/Square.hpp
 tools.hpp
-C:/Users/Rob/CLionProjects/P2_Square/tools.hpp
+C:/Users/Rob/CLionProjects/Suduko/tools.hpp
 
-C:/Users/Rob/CLionProjects/P2_Square/tools.hpp
+C:/Users/Rob/CLionProjects/Suduko/tools.hpp
 iostream
 -
 fstream
