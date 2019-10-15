@@ -9,12 +9,14 @@
 
 #include "tools.hpp"
 #include "Board.hpp"
-
+class Board;
 class game {
     public:
-        game(const char * );
+        game(const string& );
+        ~game();
         void run();
-        void newGame(const char*);
+        void newGame(const string&);
+        ostream &print(ostream &out);
     private:
         ifstream fName;
         Board* brd;
@@ -24,7 +26,10 @@ class game {
             "1. Mark", "2. Undo", "3. Redo", "4. Save Game", "5. Restore Game", "6. Quit"
         };
         const char * menuX = "MmUuRrSsTtQq";
-
 };
+
+inline ostream& operator<<(ostream& out, game& g) {
+    return g.print(out);
+}
 
 #endif //P2_SQUARE_GAME_HPP

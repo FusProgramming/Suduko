@@ -10,7 +10,6 @@
 
 #include "tools.hpp"
 
-
 class Cluster;
 
 class State {
@@ -19,7 +18,7 @@ class State {
         ~State() = default;
         State(char c);
         void mark(char ch);
-        void print();
+        ostream& print(ostream& out);
     protected:
         bool fixed;
         short possList;
@@ -43,8 +42,7 @@ class Square : public State {
 };
 
 inline ostream& operator<< (ostream& out, State st) {
-    st.print();
-    return out;
+    return st.print(out);
 }
 inline ostream& operator<< (ostream& out, Square sq) {
     return sq.print(out);

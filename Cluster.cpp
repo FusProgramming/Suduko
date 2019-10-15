@@ -3,10 +3,11 @@
 //
 
 #include "Cluster.hpp"
-const char* Cluster::clusterName[] = { "row", "col" , "box" };
+#include "Board.hpp"
 
+const char* Cluster::clusterName[] = { "row", "col" , "box" };
 //----------------------------------------------------------------
-Cluster::Cluster(const char * type, Square * s[9]) {
+Cluster::Cluster(ClusterT type, Square * s[9]) {
     cType = type;
     for(int j = 0 ; j < 9; j++) {
         sArr[j] = s[j];
@@ -24,6 +25,7 @@ void Cluster::shoop(char val) {
 
 //----------------------------------------------------------------
 void Cluster::print() {
+    cout << clusterName[cType] << endl;
     for(Square* Sq : sArr) {
         Sq->print(cout);
         cout << endl;

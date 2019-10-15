@@ -21,16 +21,22 @@ State::State(char c) {
 
 //----------------------------------------------------------------
 void State::mark(char ch) {
+    int val = ch - '0';
+    bool markValue = (possList >> val) & 1;
     if(fixed) {
         cout << "THIS IS FIXED, VALUE WILL NOT CHANGE. " << endl;
     } else {
-        value = ch;
-        possList = 0;
+        if(markValue) {
+            value = ch;
+            possList = 0;
+        } else {
+            cout << "Not Valid Possibility" << endl;
+        }
     }
 }
 
 //----------------------------------------------------------------
-void State::print() {
+ostream& State::print(ostream& out) {
     short printList, printMask;
     cout << "Value: " << value;
     cout << " Possibility: ";
@@ -38,11 +44,12 @@ void State::print() {
         printList = possList >> 1;
         printMask = 1 << k;
         if((printList & printMask) == 0) {
-            cout << '-';
+            out << '-';
         } else {
-            cout << k;
+            out << k;
         }
     }
+    return out;
 }
 
 //----------------------------------------------------------------
@@ -57,15 +64,12 @@ Square::~Square() {
 
 //----------------------------------------------------------------
 void Square::mark(char ch) {
-    cout << "Enter Value" << endl;
-    cin >> ch;
-    if(ch < '1' && ch > '9') {
-        cout <<"Please choose another value" << endl;
-        cin >> ch;
-    }
-    cout << "PossList Before: " << possList << endl;
+    cout << "1" << endl;
     State::mark(ch);
-    cout << "PossList After: " << possList << endl;
+    cout << '2' << endl;
+    for(Cluster * cluster : clues) {
+        cluster->shoop(value);
+    }
 }
 //----------------------------------------------------------------
 void Square::addCluster(Cluster* pCl) {
@@ -80,6 +84,6 @@ void Square::turnOff(int n) {
 //----------------------------------------------------------------
 ostream& Square::print(ostream& out) {
     out << "Square: [" << row << ", " << col << "] ";
-    State::print();
+    State::print(out);
     return out;
 }

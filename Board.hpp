@@ -10,23 +10,19 @@
 #include "tools.hpp"
 #include "Square.hpp"
 
-enum ClusterT {
-    row, col, box
-};
-
 class Board {
     public:
-        Board(int n, const char* myFile);
+        Board(int n, ifstream& strm);
         ~Board();
         Square& sub(int j, int k);
-        void print();
-        void printCluster(ostream&);
+        ostream& print(ostream& out);
+        ostream& printCluster(ostream&);
         void makeClusters();
 private:
         int N;
         Square* brd;
         void getPuzzle(int n);
-        ifstream fName;
+        ifstream& fName;
         short int left = '-';
         vector<Cluster*> clusters;
         void createRow(short j);
@@ -38,8 +34,7 @@ private:
 };
 
 inline ostream& operator<< (ostream& out, Board& b) {
-    b.print();
-    return out;
+    return b.print(out);
 }
 
 #endif //P2_SQUARE_BOARD_HPP

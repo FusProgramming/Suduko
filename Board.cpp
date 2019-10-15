@@ -7,12 +7,19 @@
 #include "Board.hpp"
 #include "Cluster.hpp"
 
+static const char* clusterName[3];
+
 //----------------------------------------------------------------
-Board::Board(int n, const char* myFile) : N(n)  {
+Board::Board(int n, ifstream& strm) : N(n), fName(strm)  {
     cout << "Board Constructing" << endl;
-    fName.open(myFile);
     if(!fName.is_open()) fatal("Error Opening File");
     getPuzzle(n);
+}
+
+//----------------------------------------------------------------
+Board::~Board() {
+    delete[] brd;
+    cout << "Destructed Board" <<  endl;
 }
 
 //----------------------------------------------------------------
@@ -29,7 +36,6 @@ void Board::getPuzzle(int n) {
             if (k == 9) cout << "\n";
             if (k == 10 && ch != '\n') fatal("Error, Oversized File");
             if (j == 10 && !fName.eof()) fatal("Error, Oversized File");
-
         }
     }
     makeClusters();
@@ -49,6 +55,7 @@ void Board::makeClusters() {
     for(k = 1; k <= 9; k++) {
         createColumn(k);
     }
+
     for(j = 1; j <= 9; j+=3){
         for(k = 1; k <= 9; k+=3){
             createBox(j, k);
@@ -64,7 +71,7 @@ void Board::createRow(short j) {
         for(short q = 1; q<= 9; q++) {
             rows[q-1] = &sub(p,q);
         }
-        clusters.push_back(new Cluster("row", rows));
+        clusters.push_back(new Cluster(row, rows));
     }
 }
 
@@ -75,37 +82,33 @@ void Board::createColumn(short k) {
         for(short p =1; p <= 9; p++) {
             cols[p-1] = &sub(p,q);
     }
-    clusters.push_back(new Cluster("row", cols));
+    clusters.push_back(new Cluster(col, cols));
     }
 }
 //----------------------------------------------------------------
 void Board::createBox(short j, short k) {
-    Square* box[9];
+    Square* boxes[9];
     int count = 0;
     for(int row = j; row <= j + 2; row++){
         for(int cell = k; cell <= k+  2; cell++){
-            box[count] = &sub(row,cell);
+            boxes[count] = &sub(row,cell);
             count++;
         }
     }
-    clusters.push_back(new Cluster("box", box));
-}
-
-
-//----------------------------------------------------------------
-Board::~Board() {
-    delete[] brd;
-    cout << "Destructed Board" <<  endl;
+    clusters.push_back(new Cluster(box, boxes));
 }
 
 //----------------------------------------------------------------
-void Board::print() {
+ostream& Board::print(ostream& out) {
     for(int n = 0; n < 81; n++){
-        cout << brd[n];
+        out << brd[n];
     }
+    printCluster(out);
+    return out;
 }
-void Board::printCluster(ostream& out) {
+ostream& Board::printCluster(ostream& out) {
     for (Cluster* cl : clusters) {
         out << *cl << endl;
     }
+    return out;
 }

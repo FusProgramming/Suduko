@@ -7,22 +7,30 @@
 #include "game.hpp"
 
 //----------------------------------------------------------------
-game::game(const char * myFile) {
+game::game(const string& strm) {
     char x;
-    string legal = "TtDdSs";
-    fName.open(myFile);
+    const string legal = "TtDdSs";
+    fName.open(strm);
     if(!fName.is_open()) { fatal("Error, File will not open"); }
     fName >> x;
-    if(legal.find_first_of(x)==string::npos) {
-        fatal("Invalid Type in the Game");
-    } else if(legal.find_first_of(x)!=string::npos) {
+    size_t validGame = legal.find(x);
+    if(validGame!=string::npos) {
         gType = x;
         cout << gType;
-        newGame(myFile);
+        newGame(strm);
+    } else {
+        fatal("Invalid Type in the Game");
     }
+    cout << "CLOSING" << endl;
+    fName.close();
 }
 //----------------------------------------------------------------
-void game::newGame(const char* myFile) {
+game::~game() {
+    delete brd;
+    cout << "Board Deleted" << endl;
+}
+//----------------------------------------------------------------
+void game::newGame(const string& strm) {
     if(gType =='t') {
         gSize= 9;
     } else if(gType == 'd') {
@@ -31,7 +39,7 @@ void game::newGame(const char* myFile) {
     } else if(gType == 's'){
         gSize= 6;
     }
-    brd = new Board(gSize, myFile);
+    brd = new Board(gSize, fName);
 }
 //----------------------------------------------------------------
 void game::run() {
@@ -65,5 +73,8 @@ void game::run() {
     }
 }
 
-
-
+//----------------------------------------------------------------
+ostream& game::print(ostream& out) {
+    out << *brd;
+    return out;
+}

@@ -6,16 +6,21 @@
 #define P2_SQUARE_CLUSTER_HPP
 
 #include "Square.hpp"
+
+enum ClusterT {
+    row, col, box
+};
+
 class Cluster {
     public:
-        Cluster(const char *, Square*[9]);
+        Cluster(ClusterT, Square*[9]);
         void print();
         void shoop(char val);
 
     private:
-        const char* cType;
+        ClusterT cType;
         Square* sArr[9];
-        static const char* clusterName[3];
+        static const char* clusterName[];
 
 };
 
