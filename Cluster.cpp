@@ -1,9 +1,10 @@
-//
-// Created by Rob on 9/28/2019.
-//
+// Robert Fus
+// CSCI 6626 - Object-Orientated Principles & Practices
+// Program 5: Cluster
+// File: Cluster.cpp
+// 10/15/2019
 
 #include "Cluster.hpp"
-#include "Board.hpp"
 
 const char* Cluster::clusterName[] = { "row", "col" , "box" };
 //----------------------------------------------------------------

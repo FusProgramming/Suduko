@@ -64,9 +64,7 @@ Square::~Square() {
 
 //----------------------------------------------------------------
 void Square::mark(char ch) {
-    cout << "1" << endl;
     State::mark(ch);
-    cout << '2' << endl;
     for(Cluster * cluster : clues) {
         cluster->shoop(value);
     }

@@ -14,9 +14,14 @@
     <list default="true" id="76c81f3c-a9bb-4c07-8d63-75540d491089" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Board.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Board.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Board.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Board.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cluster.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Cluster.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cluster.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Cluster.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Square.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Square.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +103,7 @@
       <workItem from="1569726433691" duration="2236000" />
       <workItem from="1569785174385" duration="13843000" />
       <workItem from="1569949367560" duration="2576000" />
-      <workItem from="1570924124111" duration="91391000" />
+      <workItem from="1570924124111" duration="93742000" />
     </task>
     <task id="LOCAL-00001" summary="Broken Commit for Game Too Tired to fix">
       <created>1568526355219</created>
@@ -191,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571130722058</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="P5 - Cluster - Updates on Program to make it better. Finish Cluster. Need Unit Test">
+      <created>1571132327128</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1571132327128</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +232,7 @@
     <MESSAGE value="P5 - Cluster - Initial Start Up" />
     <MESSAGE value="P5 - Cluster - Rows &amp; Columns done" />
     <MESSAGE value="P5 - Cluster - Boxes work" />
-    <option name="LAST_COMMIT_MESSAGE" value="P5 - Cluster - Boxes work" />
+    <MESSAGE value="P5 - Cluster - Updates on Program to make it better. Finish Cluster. Need Unit Test" />
+    <option name="LAST_COMMIT_MESSAGE" value="P5 - Cluster - Updates on Program to make it better. Finish Cluster. Need Unit Test" />
   </component>
 </project>
