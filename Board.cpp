@@ -49,7 +49,11 @@ void Board::makeClusters() {
     for(k = 1; k <= 9; k++) {
         createColumn(k);
     }
-    createBox(j,k);
+    for(j = 1; j <= 9; j+=3){
+        for(k = 1; k <= 9; k+=3){
+            createBox(j, k);
+        }
+    }
 
 }
 
@@ -76,8 +80,17 @@ void Board::createColumn(short k) {
 }
 //----------------------------------------------------------------
 void Board::createBox(short j, short k) {
-
+    Square* box[9];
+    int count = 0;
+    for(int row = j; row <= j + 2; row++){
+        for(int cell = k; cell <= k+  2; cell++){
+            box[count] = &sub(row,cell);
+            count++;
+        }
+    }
+    clusters.push_back(new Cluster("box", box));
 }
+
 
 //----------------------------------------------------------------
 Board::~Board() {

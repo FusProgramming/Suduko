@@ -20,7 +20,6 @@ void Cluster::shoop(char val) {
     for(Square* Sq : sArr) {
         Sq->turnOff(value);
     }
-
 }
 
 //----------------------------------------------------------------
