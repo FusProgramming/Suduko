@@ -10,9 +10,9 @@
 static const char* clusterName[3];
 
 //----------------------------------------------------------------
-Board::Board(int n, ifstream& strm) : N(n), fName(strm)  {
+Board::Board(int n, ifstream& strm) : N(n), data(strm)  {
     cout << "Board Constructing" << endl;
-    if(!fName.is_open()) fatal("Error Opening File");
+    if(!data.is_open()) fatal("Error Opening File");
     getPuzzle(n);
 }
 
@@ -28,15 +28,14 @@ void Board::getPuzzle(int n) {
     brd = new Square[n * n];
     for (int j = 1; j <= n; j++) {
         for (int k = 1; k <= n; k++) {
-            fName >> ch;
+            data >> ch;
             if ((ch >= '1' && ch <= '9') || ch == left) {
                 Square Sq(ch, j, k);
                 sub(j, k) = Sq;
             }
             if (k == 9) cout << "\n";
-            if (k == 10 && ch != '\n') fatal("Error, Oversized File");
-            if (j == 10 && !fName.eof()) fatal("Error, Oversized File");
         }
+        if (j == 10 && !data.eof()) fatal("Error, Oversized File");
     }
     makeClusters();
 }

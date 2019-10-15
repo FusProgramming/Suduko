@@ -22,7 +22,7 @@ private:
         int N;
         Square* brd;
         void getPuzzle(int n);
-        ifstream& fName;
+        ifstream& data;
         short int left = '-';
         vector<Cluster*> clusters;
         void createRow(short j);
