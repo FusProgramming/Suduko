@@ -10,7 +10,7 @@
 game::game(const string& strm) {
     char x;
     const string legal = "TtDdSs";
-    fName.open(strm);
+    fName.open( strm);
     if(!fName.is_open()) { fatal("Error, File will not open"); }
     fName >> x;
     size_t validGame = legal.find(x);

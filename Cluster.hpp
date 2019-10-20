@@ -18,12 +18,10 @@ class Cluster {
         Cluster(ClusterT, Square*[9]);
         void print();
         void shoop(char val);
-
     private:
         ClusterT cType;
         Square* sArr[9];
         static const char* clusterName[];
-
 };
 
 inline ostream& operator<< (ostream& out, Cluster& cl) {

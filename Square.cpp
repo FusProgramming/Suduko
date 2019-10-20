@@ -40,8 +40,8 @@ ostream& State::print(ostream& out) {
     short printList, printMask;
     cout << "Value: " << value;
     cout << " Possibility: ";
-    for(int k = 1; k < 9; k++) {
-        printList = possList >> 1;
+    for(int k = 1; k <= 9; k++) {
+        printList = possList ;
         printMask = 1 << k;
         if((printList & printMask) == 0) {
             out << '-';
@@ -77,7 +77,6 @@ void Square::addCluster(Cluster* pCl) {
 void Square::turnOff(int n) {
     short mask = 1 << n;
     possList = possList & ~mask;
-    possList++;
 }
 //----------------------------------------------------------------
 ostream& Square::print(ostream& out) {

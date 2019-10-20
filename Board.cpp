@@ -45,17 +45,18 @@ Square& Board::sub(int j, int k) {
     int sub = (j - 1) * 9 + (k - 1);
     return brd[sub];
 }
+
 //----------------------------------------------------------------
 void Board::makeClusters() {
     short j, k;
-    for(j = 1; j <= 9;j++) {
+    for(j = 1; j <= N;j++) {
         createRow(j);
     }
-    for(k = 1; k <= 9; k++) {
+    for(k = 1; k <= N; k++) {
         createColumn(k);
     }
-    for(j = 1; j <= 9; j+=3){
-        for(k = 1; k <= 9; k+=3){
+    for(j = 1; j <= N; j+=3){
+        for(k = 1; k <= N; k+=3){
             createBox(j, k);
         }
     }
@@ -93,6 +94,7 @@ void Board::createBox(short j, short k) {
         }
     }
     clusters.push_back(new Cluster(box, boxes));
+
 }
 
 //----------------------------------------------------------------
@@ -103,6 +105,7 @@ ostream& Board::print(ostream& out) {
     printCluster(out);
     return out;
 }
+//----------------------------------------------------------------
 ostream& Board::printCluster(ostream& out) {
     for (Cluster* cl : clusters) {
         out << *cl << endl;

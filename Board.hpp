@@ -18,7 +18,7 @@ class Board {
         ostream& print(ostream& out);
         ostream& printCluster(ostream&);
         void makeClusters();
-private:
+    private:
         int N;
         Square* brd;
         void getPuzzle(int n);
@@ -28,9 +28,6 @@ private:
         void createRow(short j);
         void createColumn(short k);
         void createBox(short j, short k);
-
-
-
 };
 
 inline ostream& operator<< (ostream& out, Board& b) {

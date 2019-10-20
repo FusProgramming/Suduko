@@ -12,29 +12,19 @@ C:/Users/Rob/CLionProjects/Suduko/tools.hpp
 Square.hpp
 C:/Users/Rob/CLionProjects/Suduko/Square.hpp
 
-C:/Users/Rob/CLionProjects/Suduko/Cluster.hpp
-Square.hpp
-C:/Users/Rob/CLionProjects/Suduko/Square.hpp
-
 C:/Users/Rob/CLionProjects/Suduko/Square.hpp
 tools.hpp
 C:/Users/Rob/CLionProjects/Suduko/tools.hpp
 
-C:/Users/Rob/CLionProjects/Suduko/game.hpp
-tools.hpp
-C:/Users/Rob/CLionProjects/Suduko/tools.hpp
-Board.hpp
-C:/Users/Rob/CLionProjects/Suduko/Board.hpp
-
-C:/Users/Rob/CLionProjects/Suduko/main.cpp
-Square.hpp
-C:/Users/Rob/CLionProjects/Suduko/Square.hpp
+C:/Users/Rob/CLionProjects/Suduko/game.cpp
 game.hpp
 C:/Users/Rob/CLionProjects/Suduko/game.hpp
+
+C:/Users/Rob/CLionProjects/Suduko/game.hpp
+tools.hpp
+C:/Users/Rob/CLionProjects/Suduko/tools.hpp
 Board.hpp
 C:/Users/Rob/CLionProjects/Suduko/Board.hpp
-Cluster.hpp
-C:/Users/Rob/CLionProjects/Suduko/Cluster.hpp
 
 C:/Users/Rob/CLionProjects/Suduko/tools.hpp
 iostream

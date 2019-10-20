@@ -65,6 +65,7 @@ void testCluster() {
     Cluster cluster(row,rows);
     cout << cluster << endl;
     rows[3]->mark('5');
-    rows[7]->mark('1');
+    cout << cluster << endl;
+    rows[7]->mark('2');
     cout << cluster << endl;
 }
