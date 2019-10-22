@@ -7,7 +7,7 @@
 #include "StreamErrors.hpp"
 //----------------------------------------------------------------
 StreamErrors::StreamErrors(ifstream& strm) : fName(strm) {
-    cerr << "Stream Errors Constructor" << endl;
+    cerr << "Stream Errors Indicated" << endl;
 }
 
 //----------------------------------------------------------------
@@ -17,7 +17,7 @@ void StreamErrors::print() {
 
 //----------------------------------------------------------------
 StreamFiles::StreamFiles(ifstream& strm) : StreamErrors(strm){
-    cerr << "Stream Files Constructor" << endl;
+    cerr << "Stream Files Error Indicated" << endl;
 }
 
 //----------------------------------------------------------------
@@ -27,7 +27,7 @@ void StreamFiles::print() {
 
 //----------------------------------------------------------------
 StreamBoard::StreamBoard(ifstream& strm) : StreamErrors(strm){
-    cerr << "Stream Board Constructor" << endl;
+    cerr << "Stream Board Error Indicated" << endl;
 }
 
 //----------------------------------------------------------------

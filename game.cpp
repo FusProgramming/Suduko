@@ -6,7 +6,6 @@
 
 #include "game.hpp"
 
-
 //----------------------------------------------------------------
 game::game(const string& strm) {
     char x;
@@ -64,7 +63,7 @@ void game::run() {
                         cout << "What number do you want to input?" << endl;
                         cin >> ch;
                         if ((row >= '1' && row <= '9') && (col >= '1' && col <= '9')) {
-                            //Mark Function
+                            break;
                         } else {
                             throw GameValues(row, col, ch);
                         }
@@ -75,6 +74,7 @@ void game::run() {
                     }
                     break;
                 }
+                break;
             case 'R':
             case 'r':
                 cout << "Redo - Unfinished" << endl;

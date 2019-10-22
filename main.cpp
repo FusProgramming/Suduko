@@ -18,8 +18,22 @@ void testCluster();
 //----------------------------------------------------------------
 int main(int argc, const char * argv[]) {
     banner();
-    testCluster();
-    testBoard();
+    for(;;) {
+            try {
+                string strm = "puz1.txt";
+                cout << "What is the File Name?" << endl;
+                cin >> strm;
+                game game(strm);
+                game.print(cout);
+                game.run();
+            } catch ( StreamErrors ex) {
+                ex.print();
+            } catch ( StreamFiles ex) {
+                ex.print();
+            } catch ( StreamBoard ex) {
+                ex.print();
+            }
+    }
 }
 
 //----------------------------------------------------------------
@@ -48,22 +62,7 @@ void testSquare() {
     testSq2.mark('3');
     cout << "Value changed to three. " << testSq2 << endl;
 }
-//----------------------------------------------------------------
-void testBoard() {
-    for (;;) {
-        try {
-            game game("puz1.txt");
-            game.print(cout);
-            game.run();
-        } catch (StreamErrors ex) {
-            ex.print();
-        } catch (StreamFiles ex) {
-            ex.print();
-        } catch ( StreamBoard ex) {
-            ex.print();
-        }
-    }
-}
+
 //----------------------------------------------------------------
 void testCluster() {
     Square* rows[9];

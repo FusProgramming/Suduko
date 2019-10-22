@@ -11,7 +11,7 @@
 
 class GameErrors {
     public:
-        int r, c;
+        int j, k;
         char val;
         GameErrors(int row, int col, char value);
         virtual void print();
