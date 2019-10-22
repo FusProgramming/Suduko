@@ -92,10 +92,22 @@
 		<Unit filename="C:/Users/Rob/CLionProjects/Suduko/Cluster.hpp">
 			<Option target="P2_SQUARE"/>
 		</Unit>
+		<Unit filename="C:/Users/Rob/CLionProjects/Suduko/GameErrors.cpp">
+			<Option target="P2_SQUARE"/>
+		</Unit>
+		<Unit filename="C:/Users/Rob/CLionProjects/Suduko/GameErrors.hpp">
+			<Option target="P2_SQUARE"/>
+		</Unit>
 		<Unit filename="C:/Users/Rob/CLionProjects/Suduko/Square.cpp">
 			<Option target="P2_SQUARE"/>
 		</Unit>
 		<Unit filename="C:/Users/Rob/CLionProjects/Suduko/Square.hpp">
+			<Option target="P2_SQUARE"/>
+		</Unit>
+		<Unit filename="C:/Users/Rob/CLionProjects/Suduko/StreamErrors.cpp">
+			<Option target="P2_SQUARE"/>
+		</Unit>
+		<Unit filename="C:/Users/Rob/CLionProjects/Suduko/StreamErrors.hpp">
 			<Option target="P2_SQUARE"/>
 		</Unit>
 		<Unit filename="C:/Users/Rob/CLionProjects/Suduko/game.cpp">

@@ -9,10 +9,14 @@
 
 #include "tools.hpp"
 #include "Square.hpp"
+#include "StreamErrors.hpp"
+#include "GameErrors.hpp"
+#include "Cluster.hpp"
+
 
 class Board {
     public:
-        Board(int n, ifstream& strm);
+        Board(int n, ifstream& strm) throw (StreamErrors, GameErrors);
         ~Board();
         Square& sub(int j, int k);
         ostream& print(ostream& out);
@@ -21,7 +25,7 @@ class Board {
     private:
         int N;
         Square* brd;
-        void getPuzzle(int n);
+        void getPuzzle(int n, ifstream& strm);
         ifstream& data;
         short int left = '-';
         vector<Cluster*> clusters;

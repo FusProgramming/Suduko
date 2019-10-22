@@ -176,6 +176,33 @@ Cluster.cpp.s:
 	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/Cluster.cpp.s
 .PHONY : Cluster.cpp.s
 
+GameErrors.obj: GameErrors.cpp.obj
+
+.PHONY : GameErrors.obj
+
+# target to build an object file
+GameErrors.cpp.obj:
+	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/GameErrors.cpp.obj
+.PHONY : GameErrors.cpp.obj
+
+GameErrors.i: GameErrors.cpp.i
+
+.PHONY : GameErrors.i
+
+# target to preprocess a source file
+GameErrors.cpp.i:
+	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/GameErrors.cpp.i
+.PHONY : GameErrors.cpp.i
+
+GameErrors.s: GameErrors.cpp.s
+
+.PHONY : GameErrors.s
+
+# target to generate assembly for a file
+GameErrors.cpp.s:
+	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/GameErrors.cpp.s
+.PHONY : GameErrors.cpp.s
+
 Square.obj: Square.cpp.obj
 
 .PHONY : Square.obj
@@ -202,6 +229,33 @@ Square.s: Square.cpp.s
 Square.cpp.s:
 	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/Square.cpp.s
 .PHONY : Square.cpp.s
+
+StreamErrors.obj: StreamErrors.cpp.obj
+
+.PHONY : StreamErrors.obj
+
+# target to build an object file
+StreamErrors.cpp.obj:
+	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/StreamErrors.cpp.obj
+.PHONY : StreamErrors.cpp.obj
+
+StreamErrors.i: StreamErrors.cpp.i
+
+.PHONY : StreamErrors.i
+
+# target to preprocess a source file
+StreamErrors.cpp.i:
+	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/StreamErrors.cpp.i
+.PHONY : StreamErrors.cpp.i
+
+StreamErrors.s: StreamErrors.cpp.s
+
+.PHONY : StreamErrors.s
+
+# target to generate assembly for a file
+StreamErrors.cpp.s:
+	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/StreamErrors.cpp.s
+.PHONY : StreamErrors.cpp.s
 
 game.obj: game.cpp.obj
 
@@ -299,9 +353,15 @@ help:
 	@echo ... Cluster.obj
 	@echo ... Cluster.i
 	@echo ... Cluster.s
+	@echo ... GameErrors.obj
+	@echo ... GameErrors.i
+	@echo ... GameErrors.s
 	@echo ... Square.obj
 	@echo ... Square.i
 	@echo ... Square.s
+	@echo ... StreamErrors.obj
+	@echo ... StreamErrors.i
+	@echo ... StreamErrors.s
 	@echo ... game.obj
 	@echo ... game.i
 	@echo ... game.s

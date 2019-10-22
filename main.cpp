@@ -8,6 +8,7 @@
 #include "game.hpp"
 #include "Board.hpp"
 #include "Cluster.hpp"
+#include "StreamErrors.hpp"
 
 void testState();
 void testSquare();
@@ -49,9 +50,19 @@ void testSquare() {
 }
 //----------------------------------------------------------------
 void testBoard() {
-    game game("puz1.txt");
-    game.print(cout);
-    game.run();
+    for (;;) {
+        try {
+            game game("puz1.txt");
+            game.print(cout);
+            game.run();
+        } catch (StreamErrors ex) {
+            ex.print();
+        } catch (StreamFiles ex) {
+            ex.print();
+        } catch ( StreamBoard ex) {
+            ex.print();
+        }
+    }
 }
 //----------------------------------------------------------------
 void testCluster() {

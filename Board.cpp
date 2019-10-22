@@ -5,15 +5,16 @@
 // 9/21/2019
 
 #include "Board.hpp"
-#include "Cluster.hpp"
 
 static const char* clusterName[3];
 
 //----------------------------------------------------------------
-Board::Board(int n, ifstream& strm) : N(n), data(strm)  {
+Board::Board(int n, ifstream& strm) throw (StreamErrors, GameErrors) : N(n), data(strm) {
     cout << "Board Constructing" << endl;
-    if(!data.is_open()) fatal("Error Opening File");
-    getPuzzle(n);
+    if(!data.is_open()) {
+        throw StreamFiles(strm);
+    }
+    getPuzzle(n, strm);
 }
 
 //----------------------------------------------------------------
@@ -23,7 +24,7 @@ Board::~Board() {
 }
 
 //----------------------------------------------------------------
-void Board::getPuzzle(int n) {
+void Board::getPuzzle(int n, ifstream& strm) {
     char ch;
     brd = new Square[n * n];
     for (int j = 1; j <= n; j++) {
@@ -35,7 +36,7 @@ void Board::getPuzzle(int n) {
             }
             if (k == 9) cout << "\n";
         }
-        if (j == 10 && !data.eof()) fatal("Error, Oversized File");
+        if (j == 10 && !data.eof()) throw StreamFiles(strm);
     }
     makeClusters();
 }
@@ -93,8 +94,12 @@ void Board::createBox(short j, short k) {
             count++;
         }
     }
-    clusters.push_back(new Cluster(box, boxes));
-
+    Cluster* clust = new Cluster(box, boxes);
+    clusters.push_back(clust);
+    for(int n = 0; n < N; n++) {
+        boxes[n]->addCluster(clust);
+        clust->shoop(boxes[n]->getValue());
+    }
 }
 
 //----------------------------------------------------------------

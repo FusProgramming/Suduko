@@ -6,12 +6,15 @@
 
 #include "game.hpp"
 
+
 //----------------------------------------------------------------
 game::game(const string& strm) {
     char x;
     const string legal = "TtDdSs";
-    fName.open( strm);
-    if(!fName.is_open()) { fatal("Error, File will not open"); }
+    fName.open(strm);
+    if(!fName.is_open()) {
+        throw StreamErrors((ifstream&) strm);
+    }
     fName >> x;
     size_t validGame = legal.find(x);
     if(validGame!=string::npos) {
@@ -19,7 +22,7 @@ game::game(const string& strm) {
         cout << gType;
         newGame(strm);
     } else {
-        fatal("Invalid Type in the Game");
+        throw StreamFiles((ifstream&) strm);
     }
     cout << "CLOSING" << endl;
     fName.close();
@@ -34,8 +37,7 @@ void game::newGame(const string& strm) {
     if(gType =='t') {
         gSize= 9;
     } else if(gType == 'd') {
-        cerr << "Empty else Statement" << endl;
-        fatal("Empty statement");
+        throw StreamBoard((ifstream&) strm);
     } else if(gType == 's'){
         gSize= 6;
     }
@@ -43,17 +45,36 @@ void game::newGame(const string& strm) {
 }
 //----------------------------------------------------------------
 void game::run() {
-    for(;;) {
+    for (;;) {
         char c = menu_c("Menu", 6, menu, menuX);
-        switch(c) {
+        switch (c) {
             case 'Q':
             case 'q':
                 bye();
                 exit(0);
             case 'M':
             case 'm':
-                cout << "Mark - Unfinished " << endl;
-                break;
+                for (;;) {
+                    try {
+                        char row, col, ch;
+                        cout << "What is the row you want to mark?" << endl;
+                        cin >> row;
+                        cout << "What is the column you want to mark?" << endl;
+                        cin >> col;
+                        cout << "What number do you want to input?" << endl;
+                        cin >> ch;
+                        if ((row >= '1' && row <= '9') && (col >= '1' && col <= '9')) {
+                            //Mark Function
+                        } else {
+                            throw GameValues(row, col, ch);
+                        }
+                    } catch (GameErrors ex) {
+                        ex.print();
+                    } catch (GameValues ex) {
+                        ex.print();
+                    }
+                    break;
+                }
             case 'R':
             case 'r':
                 cout << "Redo - Unfinished" << endl;
@@ -67,11 +88,12 @@ void game::run() {
                 cout << "Restore - Unfinished" << endl;
                 break;
             default:
-                cout <<"Enter a Valid Input" << endl;
+                cout << "Enter a Valid Input" << endl;
                 break;
         }
     }
 }
+
 
 //----------------------------------------------------------------
 ostream& game::print(ostream& out) {

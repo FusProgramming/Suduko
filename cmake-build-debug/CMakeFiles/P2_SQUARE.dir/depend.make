@@ -4,7 +4,9 @@
 CMakeFiles/P2_SQUARE.dir/Board.cpp.obj: ../Board.cpp
 CMakeFiles/P2_SQUARE.dir/Board.cpp.obj: ../Board.hpp
 CMakeFiles/P2_SQUARE.dir/Board.cpp.obj: ../Cluster.hpp
+CMakeFiles/P2_SQUARE.dir/Board.cpp.obj: ../GameErrors.hpp
 CMakeFiles/P2_SQUARE.dir/Board.cpp.obj: ../Square.hpp
+CMakeFiles/P2_SQUARE.dir/Board.cpp.obj: ../StreamErrors.hpp
 CMakeFiles/P2_SQUARE.dir/Board.cpp.obj: ../tools.hpp
 
 CMakeFiles/P2_SQUARE.dir/Cluster.cpp.obj: ../Cluster.cpp
@@ -12,20 +14,33 @@ CMakeFiles/P2_SQUARE.dir/Cluster.cpp.obj: ../Cluster.hpp
 CMakeFiles/P2_SQUARE.dir/Cluster.cpp.obj: ../Square.hpp
 CMakeFiles/P2_SQUARE.dir/Cluster.cpp.obj: ../tools.hpp
 
+CMakeFiles/P2_SQUARE.dir/GameErrors.cpp.obj: ../GameErrors.cpp
+CMakeFiles/P2_SQUARE.dir/GameErrors.cpp.obj: ../GameErrors.hpp
+CMakeFiles/P2_SQUARE.dir/GameErrors.cpp.obj: ../tools.hpp
+
 CMakeFiles/P2_SQUARE.dir/Square.cpp.obj: ../Cluster.hpp
 CMakeFiles/P2_SQUARE.dir/Square.cpp.obj: ../Square.cpp
 CMakeFiles/P2_SQUARE.dir/Square.cpp.obj: ../Square.hpp
 CMakeFiles/P2_SQUARE.dir/Square.cpp.obj: ../tools.hpp
 
+CMakeFiles/P2_SQUARE.dir/StreamErrors.cpp.obj: ../StreamErrors.cpp
+CMakeFiles/P2_SQUARE.dir/StreamErrors.cpp.obj: ../StreamErrors.hpp
+CMakeFiles/P2_SQUARE.dir/StreamErrors.cpp.obj: ../tools.hpp
+
 CMakeFiles/P2_SQUARE.dir/game.cpp.obj: ../Board.hpp
+CMakeFiles/P2_SQUARE.dir/game.cpp.obj: ../Cluster.hpp
+CMakeFiles/P2_SQUARE.dir/game.cpp.obj: ../GameErrors.hpp
 CMakeFiles/P2_SQUARE.dir/game.cpp.obj: ../Square.hpp
+CMakeFiles/P2_SQUARE.dir/game.cpp.obj: ../StreamErrors.hpp
 CMakeFiles/P2_SQUARE.dir/game.cpp.obj: ../game.cpp
 CMakeFiles/P2_SQUARE.dir/game.cpp.obj: ../game.hpp
 CMakeFiles/P2_SQUARE.dir/game.cpp.obj: ../tools.hpp
 
 CMakeFiles/P2_SQUARE.dir/main.cpp.obj: ../Board.hpp
 CMakeFiles/P2_SQUARE.dir/main.cpp.obj: ../Cluster.hpp
+CMakeFiles/P2_SQUARE.dir/main.cpp.obj: ../GameErrors.hpp
 CMakeFiles/P2_SQUARE.dir/main.cpp.obj: ../Square.hpp
+CMakeFiles/P2_SQUARE.dir/main.cpp.obj: ../StreamErrors.hpp
 CMakeFiles/P2_SQUARE.dir/main.cpp.obj: ../game.hpp
 CMakeFiles/P2_SQUARE.dir/main.cpp.obj: ../main.cpp
 CMakeFiles/P2_SQUARE.dir/main.cpp.obj: ../tools.hpp

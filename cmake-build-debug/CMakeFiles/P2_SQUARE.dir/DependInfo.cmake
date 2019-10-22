@@ -6,7 +6,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Rob/CLionProjects/Suduko/Board.cpp" "C:/Users/Rob/CLionProjects/Suduko/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/Board.cpp.obj"
   "C:/Users/Rob/CLionProjects/Suduko/Cluster.cpp" "C:/Users/Rob/CLionProjects/Suduko/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/Cluster.cpp.obj"
+  "C:/Users/Rob/CLionProjects/Suduko/GameErrors.cpp" "C:/Users/Rob/CLionProjects/Suduko/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/GameErrors.cpp.obj"
   "C:/Users/Rob/CLionProjects/Suduko/Square.cpp" "C:/Users/Rob/CLionProjects/Suduko/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/Square.cpp.obj"
+  "C:/Users/Rob/CLionProjects/Suduko/StreamErrors.cpp" "C:/Users/Rob/CLionProjects/Suduko/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/StreamErrors.cpp.obj"
   "C:/Users/Rob/CLionProjects/Suduko/game.cpp" "C:/Users/Rob/CLionProjects/Suduko/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/game.cpp.obj"
   "C:/Users/Rob/CLionProjects/Suduko/main.cpp" "C:/Users/Rob/CLionProjects/Suduko/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/main.cpp.obj"
   "C:/Users/Rob/CLionProjects/Suduko/tools.cpp" "C:/Users/Rob/CLionProjects/Suduko/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/tools.cpp.obj"

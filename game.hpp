@@ -9,6 +9,9 @@
 
 #include "tools.hpp"
 #include "Board.hpp"
+#include "StreamErrors.hpp"
+#include "GameErrors.hpp"
+
 class Board;
 class game {
     public:

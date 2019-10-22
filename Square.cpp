@@ -24,13 +24,13 @@ void State::mark(char ch) {
     int val = ch - '0';
     bool markValue = (possList >> val) & 1;
     if(fixed) {
-        cout << "THIS IS FIXED, VALUE WILL NOT CHANGE. " << endl;
+        cerr << "THIS IS FIXED, VALUE WILL NOT CHANGE. " << endl;
     } else {
         if(markValue) {
             value = ch;
             possList = 0;
         } else {
-            cout << "Not Valid Possibility" << endl;
+            cerr << "Not Valid Possibility" << endl;
         }
     }
 }
