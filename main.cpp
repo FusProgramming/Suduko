@@ -20,9 +20,9 @@ int main(int argc, const char * argv[]) {
     banner();
     for(;;) {
             try {
-                string strm = "puz1.txt";
+                string strm = "puzt.txt";
                 cout << "What is the File Name?" << endl;
-                cin >> strm;
+                cin >> strm ;
                 game game(strm);
                 game.print(cout);
                 game.run();
