@@ -35,12 +35,13 @@ game::~game() {
 void game::newGame(const string& strm) {
     if(gType =='t') {
         gSize= 9;
+        brd = new Board(gSize, fName, 27);
     } else if(gType == 'd') {
-        throw StreamBoard((ifstream&) strm);
-    } else if(gType == 's'){
+        gSize = 9;
+        brd = new DiagBoard(gSize,fName,fName); //I dont know why fName twice works here.
+    } else if(gType == 's'){                    //Trying to solve.
         gSize= 6;
     }
-    brd = new Board(gSize, fName);
 }
 //----------------------------------------------------------------
 void game::run() {

@@ -16,24 +16,34 @@
 
 class Board {
     public:
-        Board(int n, ifstream& strm) throw (StreamErrors, GameErrors);
+        Board(int n, ifstream& strm, int nType) throw (StreamErrors, GameErrors);
         ~Board();
         Square& sub(int j, int k);
         ostream& print(ostream& out);
         ostream& printCluster(ostream&);
         void makeClusters();
     private:
-        int N;
-        Square* brd;
         void getPuzzle(int n, ifstream& strm);
         ifstream& data;
         short int left = '-';
-        vector<Cluster*> clusters;
         void createRow(short j);
         void createColumn(short k);
         void createBox(short j, short k);
+    protected:
+        int N;
+        Square* brd;
+        vector<Cluster*> clusters;
 };
+class DiagBoard : public Board {
+    public:
+        DiagBoard(int n, ifstream& data, ifstream& strm);
+        ~DiagBoard()= default;
+    private:
+        void DiagBoardOne();
+        void DiagBoardTwo();
 
+
+};
 inline ostream& operator<< (ostream& out, Board& b) {
     return b.print(out);
 }

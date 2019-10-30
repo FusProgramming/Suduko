@@ -9,7 +9,7 @@
 static const char* clusterName[3];
 
 //----------------------------------------------------------------
-Board::Board(int n, ifstream& strm) throw (StreamErrors, GameErrors) : N(n), data(strm) {
+Board::Board(int n, ifstream& strm, int nType) throw (StreamErrors, GameErrors) : N(n), data(strm) {
     cout << "Board Constructing" << endl;
     if(!data.is_open()) {
         throw StreamFiles(strm);
@@ -110,10 +110,38 @@ ostream& Board::print(ostream& out) {
     printCluster(out);
     return out;
 }
+
 //----------------------------------------------------------------
 ostream& Board::printCluster(ostream& out) {
     for (Cluster* cl : clusters) {
         out << *cl << endl;
     }
     return out;
+}
+
+//----------------------------------------------------------------
+DiagBoard::DiagBoard(int n, ifstream &data, ifstream& strm) : Board(n, strm, 29) {
+    DiagBoardOne();
+    DiagBoardTwo();
+}
+//----------------------------------------------------------------
+void DiagBoard::DiagBoardOne() {
+    Square* diagOne[9];
+    int count = 0;
+    for(int sub = 0; sub < N*N; sub+=10){
+        diagOne[count] = &brd[sub];
+        count++;
+    }
+    clusters.push_back(new Cluster(diag, diagOne));
+}
+
+//----------------------------------------------------------------
+void DiagBoard::DiagBoardTwo() {
+    Square* diagTwo[9];
+    int count = 0;
+    for(int sub = 8; sub < N*N; sub+=8){
+        diagTwo[count] = &brd[sub];
+        count++;
+    }
+    clusters.push_back(new Cluster(diag, diagTwo));
 }

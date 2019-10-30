@@ -20,7 +20,7 @@ int main(int argc, const char * argv[]) {
     banner();
     for(;;) {
             try {
-                string strm = "puzt.txt";
+                string strm = "";
                 cout << "What is the File Name?" << endl;
                 cin >> strm ;
                 game game(strm);

@@ -6,7 +6,7 @@
 
 #include "Cluster.hpp"
 
-const char* Cluster::clusterName[] = { "row", "col" , "box" };
+const char* Cluster::clusterName[] = { "row", "col" , "box", "diag"};
 //----------------------------------------------------------------
 Cluster::Cluster(ClusterT type, Square * s[9]) {
     cType = type;

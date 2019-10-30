@@ -10,7 +10,7 @@
 #include "Square.hpp"
 
 enum ClusterT {
-    row, col, box
+    row, col, box, diag
 };
 
 class Cluster {
