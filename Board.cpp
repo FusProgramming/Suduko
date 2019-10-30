@@ -120,7 +120,7 @@ ostream& Board::printCluster(ostream& out) {
 }
 
 //----------------------------------------------------------------
-DiagBoard::DiagBoard(int n, ifstream &data, ifstream& strm) : Board(n, strm, 29) {
+DiagBoard::DiagBoard(int n, ifstream &strm) : Board(n, strm, 29) {
     DiagBoardOne();
     DiagBoardTwo();
 }

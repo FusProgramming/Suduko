@@ -38,8 +38,8 @@ void game::newGame(const string& strm) {
         brd = new Board(gSize, fName, 27);
     } else if(gType == 'd') {
         gSize = 9;
-        brd = new DiagBoard(gSize,fName,fName); //I dont know why fName twice works here.
-    } else if(gType == 's'){                    //Trying to solve.
+        brd = new DiagBoard(gSize,fName);
+    } else if(gType == 's'){
         gSize= 6;
     }
 }

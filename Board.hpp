@@ -36,7 +36,7 @@ class Board {
 };
 class DiagBoard : public Board {
     public:
-        DiagBoard(int n, ifstream& data, ifstream& strm);
+        DiagBoard(int n, ifstream& strm);
         ~DiagBoard()= default;
     private:
         void DiagBoardOne();
