@@ -67,7 +67,7 @@ void Board::makeClusters() {
 void Board::createRow(short j) {
     Square *rows[9];
     for(short p = j; p<= j ; p++) {
-        for(short q = 1; q<= 9; q++) {
+        for(short q = 1; q<= N; q++) {
             rows[q-1] = &sub(p,q);
         }
         clusters.push_back(new Cluster(row, rows));
@@ -78,7 +78,7 @@ void Board::createRow(short j) {
 void Board::createColumn(short k) {
     Square *cols[9];
     for(short q = k; q <= k; q++) {
-        for(short p =1; p <= 9; p++) {
+        for(short p =1; p <= N; p++) {
             cols[p-1] = &sub(p,q);
         }
     clusters.push_back(new Cluster(col, cols));
@@ -104,7 +104,7 @@ void Board::createBox(short j, short k) {
 
 //----------------------------------------------------------------
 ostream& Board::print(ostream& out) {
-    for(int n = 0; n < 81; n++){
+    for(int n = 0; n < N*N; n++){
         out << brd[n];
     }
     printCluster(out);
@@ -126,7 +126,7 @@ DiagBoard::DiagBoard(int n, ifstream &strm) : Board(n, strm, 29) {
 }
 //----------------------------------------------------------------
 void DiagBoard::DiagBoardOne() {
-    Square* diagOne[9];
+    Square* diagOne[N];
     int count = 0;
     for(int sub = 0; sub < N*N; sub+=10){
         diagOne[count] = &brd[sub];
@@ -137,7 +137,7 @@ void DiagBoard::DiagBoardOne() {
 
 //----------------------------------------------------------------
 void DiagBoard::DiagBoardTwo() {
-    Square* diagTwo[9];
+    Square* diagTwo[N];
     int count = 0;
     for(int sub = 8; sub < N*N; sub+=8){
         diagTwo[count] = &brd[sub];
