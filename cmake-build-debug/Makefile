@@ -149,6 +149,33 @@ Board.cpp.s:
 	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/Board.cpp.s
 .PHONY : Board.cpp.s
 
+Canvas.obj: Canvas.cpp.obj
+
+.PHONY : Canvas.obj
+
+# target to build an object file
+Canvas.cpp.obj:
+	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/Canvas.cpp.obj
+.PHONY : Canvas.cpp.obj
+
+Canvas.i: Canvas.cpp.i
+
+.PHONY : Canvas.i
+
+# target to preprocess a source file
+Canvas.cpp.i:
+	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/Canvas.cpp.i
+.PHONY : Canvas.cpp.i
+
+Canvas.s: Canvas.cpp.s
+
+.PHONY : Canvas.s
+
+# target to generate assembly for a file
+Canvas.cpp.s:
+	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/Canvas.cpp.s
+.PHONY : Canvas.cpp.s
+
 Cluster.obj: Cluster.cpp.obj
 
 .PHONY : Cluster.obj
@@ -203,6 +230,60 @@ GameErrors.cpp.s:
 	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/GameErrors.cpp.s
 .PHONY : GameErrors.cpp.s
 
+GridChar.obj: GridChar.cpp.obj
+
+.PHONY : GridChar.obj
+
+# target to build an object file
+GridChar.cpp.obj:
+	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/GridChar.cpp.obj
+.PHONY : GridChar.cpp.obj
+
+GridChar.i: GridChar.cpp.i
+
+.PHONY : GridChar.i
+
+# target to preprocess a source file
+GridChar.cpp.i:
+	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/GridChar.cpp.i
+.PHONY : GridChar.cpp.i
+
+GridChar.s: GridChar.cpp.s
+
+.PHONY : GridChar.s
+
+# target to generate assembly for a file
+GridChar.cpp.s:
+	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/GridChar.cpp.s
+.PHONY : GridChar.cpp.s
+
+MixedChar.obj: MixedChar.cpp.obj
+
+.PHONY : MixedChar.obj
+
+# target to build an object file
+MixedChar.cpp.obj:
+	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/MixedChar.cpp.obj
+.PHONY : MixedChar.cpp.obj
+
+MixedChar.i: MixedChar.cpp.i
+
+.PHONY : MixedChar.i
+
+# target to preprocess a source file
+MixedChar.cpp.i:
+	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/MixedChar.cpp.i
+.PHONY : MixedChar.cpp.i
+
+MixedChar.s: MixedChar.cpp.s
+
+.PHONY : MixedChar.s
+
+# target to generate assembly for a file
+MixedChar.cpp.s:
+	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/MixedChar.cpp.s
+.PHONY : MixedChar.cpp.s
+
 Square.obj: Square.cpp.obj
 
 .PHONY : Square.obj
@@ -256,6 +337,33 @@ StreamErrors.s: StreamErrors.cpp.s
 StreamErrors.cpp.s:
 	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/StreamErrors.cpp.s
 .PHONY : StreamErrors.cpp.s
+
+Viewer.obj: Viewer.cpp.obj
+
+.PHONY : Viewer.obj
+
+# target to build an object file
+Viewer.cpp.obj:
+	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/Viewer.cpp.obj
+.PHONY : Viewer.cpp.obj
+
+Viewer.i: Viewer.cpp.i
+
+.PHONY : Viewer.i
+
+# target to preprocess a source file
+Viewer.cpp.i:
+	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/Viewer.cpp.i
+.PHONY : Viewer.cpp.i
+
+Viewer.s: Viewer.cpp.s
+
+.PHONY : Viewer.s
+
+# target to generate assembly for a file
+Viewer.cpp.s:
+	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/Viewer.cpp.s
+.PHONY : Viewer.cpp.s
 
 game.obj: game.cpp.obj
 
@@ -350,18 +458,30 @@ help:
 	@echo ... Board.obj
 	@echo ... Board.i
 	@echo ... Board.s
+	@echo ... Canvas.obj
+	@echo ... Canvas.i
+	@echo ... Canvas.s
 	@echo ... Cluster.obj
 	@echo ... Cluster.i
 	@echo ... Cluster.s
 	@echo ... GameErrors.obj
 	@echo ... GameErrors.i
 	@echo ... GameErrors.s
+	@echo ... GridChar.obj
+	@echo ... GridChar.i
+	@echo ... GridChar.s
+	@echo ... MixedChar.obj
+	@echo ... MixedChar.i
+	@echo ... MixedChar.s
 	@echo ... Square.obj
 	@echo ... Square.i
 	@echo ... Square.s
 	@echo ... StreamErrors.obj
 	@echo ... StreamErrors.i
 	@echo ... StreamErrors.s
+	@echo ... Viewer.obj
+	@echo ... Viewer.i
+	@echo ... Viewer.s
 	@echo ... game.obj
 	@echo ... game.i
 	@echo ... game.s

@@ -160,6 +160,58 @@ CMakeFiles/P2_SQUARE.dir/StreamErrors.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/P2_SQUARE.dir/StreamErrors.cpp.s"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rob\CLionProjects\Suduko\StreamErrors.cpp -o CMakeFiles\P2_SQUARE.dir\StreamErrors.cpp.s
 
+CMakeFiles/P2_SQUARE.dir/Viewer.cpp.obj: CMakeFiles/P2_SQUARE.dir/flags.make
+CMakeFiles/P2_SQUARE.dir/Viewer.cpp.obj: ../Viewer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Rob\CLionProjects\Suduko\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/P2_SQUARE.dir/Viewer.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\P2_SQUARE.dir\Viewer.cpp.obj -c C:\Users\Rob\CLionProjects\Suduko\Viewer.cpp
+
+CMakeFiles/P2_SQUARE.dir/Viewer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/P2_SQUARE.dir/Viewer.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Rob\CLionProjects\Suduko\Viewer.cpp > CMakeFiles\P2_SQUARE.dir\Viewer.cpp.i
+
+CMakeFiles/P2_SQUARE.dir/Viewer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/P2_SQUARE.dir/Viewer.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rob\CLionProjects\Suduko\Viewer.cpp -o CMakeFiles\P2_SQUARE.dir\Viewer.cpp.s
+
+CMakeFiles/P2_SQUARE.dir/Canvas.cpp.obj: CMakeFiles/P2_SQUARE.dir/flags.make
+CMakeFiles/P2_SQUARE.dir/Canvas.cpp.obj: ../Canvas.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Rob\CLionProjects\Suduko\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/P2_SQUARE.dir/Canvas.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\P2_SQUARE.dir\Canvas.cpp.obj -c C:\Users\Rob\CLionProjects\Suduko\Canvas.cpp
+
+CMakeFiles/P2_SQUARE.dir/Canvas.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/P2_SQUARE.dir/Canvas.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Rob\CLionProjects\Suduko\Canvas.cpp > CMakeFiles\P2_SQUARE.dir\Canvas.cpp.i
+
+CMakeFiles/P2_SQUARE.dir/Canvas.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/P2_SQUARE.dir/Canvas.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rob\CLionProjects\Suduko\Canvas.cpp -o CMakeFiles\P2_SQUARE.dir\Canvas.cpp.s
+
+CMakeFiles/P2_SQUARE.dir/GridChar.cpp.obj: CMakeFiles/P2_SQUARE.dir/flags.make
+CMakeFiles/P2_SQUARE.dir/GridChar.cpp.obj: ../GridChar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Rob\CLionProjects\Suduko\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/P2_SQUARE.dir/GridChar.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\P2_SQUARE.dir\GridChar.cpp.obj -c C:\Users\Rob\CLionProjects\Suduko\GridChar.cpp
+
+CMakeFiles/P2_SQUARE.dir/GridChar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/P2_SQUARE.dir/GridChar.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Rob\CLionProjects\Suduko\GridChar.cpp > CMakeFiles\P2_SQUARE.dir\GridChar.cpp.i
+
+CMakeFiles/P2_SQUARE.dir/GridChar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/P2_SQUARE.dir/GridChar.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rob\CLionProjects\Suduko\GridChar.cpp -o CMakeFiles\P2_SQUARE.dir\GridChar.cpp.s
+
+CMakeFiles/P2_SQUARE.dir/MixedChar.cpp.obj: CMakeFiles/P2_SQUARE.dir/flags.make
+CMakeFiles/P2_SQUARE.dir/MixedChar.cpp.obj: ../MixedChar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Rob\CLionProjects\Suduko\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/P2_SQUARE.dir/MixedChar.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\P2_SQUARE.dir\MixedChar.cpp.obj -c C:\Users\Rob\CLionProjects\Suduko\MixedChar.cpp
+
+CMakeFiles/P2_SQUARE.dir/MixedChar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/P2_SQUARE.dir/MixedChar.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Rob\CLionProjects\Suduko\MixedChar.cpp > CMakeFiles\P2_SQUARE.dir\MixedChar.cpp.i
+
+CMakeFiles/P2_SQUARE.dir/MixedChar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/P2_SQUARE.dir/MixedChar.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Rob\CLionProjects\Suduko\MixedChar.cpp -o CMakeFiles\P2_SQUARE.dir\MixedChar.cpp.s
+
 # Object files for target P2_SQUARE
 P2_SQUARE_OBJECTS = \
 "CMakeFiles/P2_SQUARE.dir/main.cpp.obj" \
@@ -169,7 +221,11 @@ P2_SQUARE_OBJECTS = \
 "CMakeFiles/P2_SQUARE.dir/Board.cpp.obj" \
 "CMakeFiles/P2_SQUARE.dir/Cluster.cpp.obj" \
 "CMakeFiles/P2_SQUARE.dir/GameErrors.cpp.obj" \
-"CMakeFiles/P2_SQUARE.dir/StreamErrors.cpp.obj"
+"CMakeFiles/P2_SQUARE.dir/StreamErrors.cpp.obj" \
+"CMakeFiles/P2_SQUARE.dir/Viewer.cpp.obj" \
+"CMakeFiles/P2_SQUARE.dir/Canvas.cpp.obj" \
+"CMakeFiles/P2_SQUARE.dir/GridChar.cpp.obj" \
+"CMakeFiles/P2_SQUARE.dir/MixedChar.cpp.obj"
 
 # External object files for target P2_SQUARE
 P2_SQUARE_EXTERNAL_OBJECTS =
@@ -182,11 +238,15 @@ P2_SQUARE.exe: CMakeFiles/P2_SQUARE.dir/Board.cpp.obj
 P2_SQUARE.exe: CMakeFiles/P2_SQUARE.dir/Cluster.cpp.obj
 P2_SQUARE.exe: CMakeFiles/P2_SQUARE.dir/GameErrors.cpp.obj
 P2_SQUARE.exe: CMakeFiles/P2_SQUARE.dir/StreamErrors.cpp.obj
+P2_SQUARE.exe: CMakeFiles/P2_SQUARE.dir/Viewer.cpp.obj
+P2_SQUARE.exe: CMakeFiles/P2_SQUARE.dir/Canvas.cpp.obj
+P2_SQUARE.exe: CMakeFiles/P2_SQUARE.dir/GridChar.cpp.obj
+P2_SQUARE.exe: CMakeFiles/P2_SQUARE.dir/MixedChar.cpp.obj
 P2_SQUARE.exe: CMakeFiles/P2_SQUARE.dir/build.make
 P2_SQUARE.exe: CMakeFiles/P2_SQUARE.dir/linklibs.rsp
 P2_SQUARE.exe: CMakeFiles/P2_SQUARE.dir/objects1.rsp
 P2_SQUARE.exe: CMakeFiles/P2_SQUARE.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Rob\CLionProjects\Suduko\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable P2_SQUARE.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Rob\CLionProjects\Suduko\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable P2_SQUARE.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\P2_SQUARE.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -47,6 +47,8 @@ Square& Board::sub(int j, int k) {
     return brd[sub];
 }
 
+
+
 //----------------------------------------------------------------
 void Board::makeClusters() {
     short j, k;

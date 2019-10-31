@@ -11,6 +11,7 @@
 #include "Board.hpp"
 #include "StreamErrors.hpp"
 #include "GameErrors.hpp"
+#include "Viewer.hpp"
 
 class Board;
 class game {

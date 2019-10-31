@@ -46,6 +46,8 @@ void game::newGame(const string& strm) {
 //----------------------------------------------------------------
 void game::run() {
     for (;;) {
+        Viewer fancyView(9,9, *brd);
+        fancyView.show(cout);
         char c = menu_c("Menu", 6, menu, menuX);
         switch (c) {
             case 'Q':

@@ -4,10 +4,17 @@
 CMakeFiles/P2_SQUARE.dir/Board.cpp.obj
  C:/Users/Rob/CLionProjects/Suduko/Board.cpp
  C:/Users/Rob/CLionProjects/Suduko/Board.hpp
+ C:/Users/Rob/CLionProjects/Suduko/CanView.hpp
  C:/Users/Rob/CLionProjects/Suduko/Cluster.hpp
  C:/Users/Rob/CLionProjects/Suduko/GameErrors.hpp
  C:/Users/Rob/CLionProjects/Suduko/Square.hpp
  C:/Users/Rob/CLionProjects/Suduko/StreamErrors.hpp
+ C:/Users/Rob/CLionProjects/Suduko/tools.hpp
+CMakeFiles/P2_SQUARE.dir/Canvas.cpp.obj
+ C:/Users/Rob/CLionProjects/Suduko/Canvas.cpp
+ C:/Users/Rob/CLionProjects/Suduko/Canvas.hpp
+ C:/Users/Rob/CLionProjects/Suduko/GridChar.hpp
+ C:/Users/Rob/CLionProjects/Suduko/MixedChar.hpp
  C:/Users/Rob/CLionProjects/Suduko/tools.hpp
 CMakeFiles/P2_SQUARE.dir/Cluster.cpp.obj
  C:/Users/Rob/CLionProjects/Suduko/Cluster.cpp
@@ -18,6 +25,14 @@ CMakeFiles/P2_SQUARE.dir/GameErrors.cpp.obj
  C:/Users/Rob/CLionProjects/Suduko/GameErrors.cpp
  C:/Users/Rob/CLionProjects/Suduko/GameErrors.hpp
  C:/Users/Rob/CLionProjects/Suduko/tools.hpp
+CMakeFiles/P2_SQUARE.dir/GridChar.cpp.obj
+ C:/Users/Rob/CLionProjects/Suduko/GridChar.cpp
+ C:/Users/Rob/CLionProjects/Suduko/GridChar.hpp
+ C:/Users/Rob/CLionProjects/Suduko/tools.hpp
+CMakeFiles/P2_SQUARE.dir/MixedChar.cpp.obj
+ C:/Users/Rob/CLionProjects/Suduko/MixedChar.cpp
+ C:/Users/Rob/CLionProjects/Suduko/MixedChar.hpp
+ C:/Users/Rob/CLionProjects/Suduko/tools.hpp
 CMakeFiles/P2_SQUARE.dir/Square.cpp.obj
  C:/Users/Rob/CLionProjects/Suduko/Cluster.hpp
  C:/Users/Rob/CLionProjects/Suduko/Square.cpp
@@ -27,21 +42,33 @@ CMakeFiles/P2_SQUARE.dir/StreamErrors.cpp.obj
  C:/Users/Rob/CLionProjects/Suduko/StreamErrors.cpp
  C:/Users/Rob/CLionProjects/Suduko/StreamErrors.hpp
  C:/Users/Rob/CLionProjects/Suduko/tools.hpp
+CMakeFiles/P2_SQUARE.dir/Viewer.cpp.obj
+ C:/Users/Rob/CLionProjects/Suduko/CanView.hpp
+ C:/Users/Rob/CLionProjects/Suduko/Canvas.hpp
+ C:/Users/Rob/CLionProjects/Suduko/GridChar.hpp
+ C:/Users/Rob/CLionProjects/Suduko/MixedChar.hpp
+ C:/Users/Rob/CLionProjects/Suduko/Viewer.cpp
+ C:/Users/Rob/CLionProjects/Suduko/Viewer.hpp
+ C:/Users/Rob/CLionProjects/Suduko/tools.hpp
 CMakeFiles/P2_SQUARE.dir/game.cpp.obj
  C:/Users/Rob/CLionProjects/Suduko/Board.hpp
+ C:/Users/Rob/CLionProjects/Suduko/CanView.hpp
  C:/Users/Rob/CLionProjects/Suduko/Cluster.hpp
  C:/Users/Rob/CLionProjects/Suduko/GameErrors.hpp
  C:/Users/Rob/CLionProjects/Suduko/Square.hpp
  C:/Users/Rob/CLionProjects/Suduko/StreamErrors.hpp
+ C:/Users/Rob/CLionProjects/Suduko/Viewer.hpp
  C:/Users/Rob/CLionProjects/Suduko/game.cpp
  C:/Users/Rob/CLionProjects/Suduko/game.hpp
  C:/Users/Rob/CLionProjects/Suduko/tools.hpp
 CMakeFiles/P2_SQUARE.dir/main.cpp.obj
  C:/Users/Rob/CLionProjects/Suduko/Board.hpp
+ C:/Users/Rob/CLionProjects/Suduko/CanView.hpp
  C:/Users/Rob/CLionProjects/Suduko/Cluster.hpp
  C:/Users/Rob/CLionProjects/Suduko/GameErrors.hpp
  C:/Users/Rob/CLionProjects/Suduko/Square.hpp
  C:/Users/Rob/CLionProjects/Suduko/StreamErrors.hpp
+ C:/Users/Rob/CLionProjects/Suduko/Viewer.hpp
  C:/Users/Rob/CLionProjects/Suduko/game.hpp
  C:/Users/Rob/CLionProjects/Suduko/main.cpp
  C:/Users/Rob/CLionProjects/Suduko/tools.hpp

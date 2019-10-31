@@ -12,9 +12,10 @@
 #include "StreamErrors.hpp"
 #include "GameErrors.hpp"
 #include "Cluster.hpp"
+#include "CanView.hpp"
 
 
-class Board {
+class Board : public CanView {
     public:
         Board(int n, ifstream& strm, int nType) throw (StreamErrors, GameErrors);
         ~Board();
