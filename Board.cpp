@@ -57,7 +57,7 @@ string Board::getPossibilityString(int j, int k) const{
     for(int n = 1; n <= N; n++) {
         short mask = 1 << n;
         if((possList & mask) == 0) {
-            possListStr.append("-");
+            possListStr.push_back('-');
         } else {
             possListStr.append(to_string(n));
         }
