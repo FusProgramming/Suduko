@@ -14,7 +14,6 @@
 #include "Cluster.hpp"
 #include "CanView.hpp"
 
-
 class Board : public CanView {
     public:
         Board(int n, ifstream& strm, int nType) throw (StreamErrors, GameErrors);
@@ -30,6 +29,8 @@ class Board : public CanView {
         void createRow(short j);
         void createColumn(short k);
         void createBox(short j, short k);
+        char getMarkChar(int j, int k) const;
+        string getPossibilityString(int j, int k) const;
     protected:
         int N;
         Square* brd;

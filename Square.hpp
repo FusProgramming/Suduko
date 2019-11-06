@@ -32,9 +32,10 @@ class Square : public State {
         ~Square();
         void mark(char ch);
         ostream& print(ostream&);
-        char getValue(){ return value;}
         void addCluster(Cluster * pCl);
         void turnOff(int n);
+        char getValue(){ return value; }
+        short getPossList() { return possList; }
     private:
         short int col, row;
         vector<Cluster*> clues;

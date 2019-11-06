@@ -6,8 +6,6 @@
 
 #include "Board.hpp"
 
-static const char* clusterName[3];
-
 //----------------------------------------------------------------
 Board::Board(int n, ifstream& strm, int nType) throw (StreamErrors, GameErrors) : N(n), data(strm) {
     cout << "Board Constructing" << endl;
@@ -43,10 +41,29 @@ void Board::getPuzzle(int n, ifstream& strm) {
 
 //----------------------------------------------------------------
 Square& Board::sub(int j, int k) {
-    int sub = (j - 1) * 9 + (k - 1);
+    int sub = (j - 1) * N + (k - 1);
     return brd[sub];
 }
 
+char Board::getMarkChar(int j, int k) const{
+    int sub =(j- 1) * N + (k - 1);
+    return brd[sub].getValue();
+}
+
+
+string Board::getPossibilityString(int j, int k) const{
+    string possListStr;
+    short possList = brd[(j - 1) * N + (k - 1)].getPossList();
+    for(int n = 1; n <= N; n++) {
+        short mask = 1 << n;
+        if((possList & mask) == 0) {
+            possListStr.append("-");
+        } else {
+            possListStr.append(to_string(n));
+        }
+    }
+    return possListStr;
+}
 
 
 //----------------------------------------------------------------
