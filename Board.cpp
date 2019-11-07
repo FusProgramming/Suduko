@@ -45,12 +45,13 @@ Square& Board::sub(int j, int k) {
     return brd[sub];
 }
 
+//----------------------------------------------------------------
 char Board::getMarkChar(int j, int k) const{
     int sub =(j- 1) * N + (k - 1);
     return brd[sub].getValue();
 }
 
-
+//----------------------------------------------------------------
 string Board::getPossibilityString(int j, int k) const{
     string possListStr;
     short possList = brd[(j - 1) * N + (k - 1)].getPossList();
@@ -64,7 +65,6 @@ string Board::getPossibilityString(int j, int k) const{
     }
     return possListStr;
 }
-
 
 //----------------------------------------------------------------
 void Board::makeClusters() {
