@@ -14,9 +14,13 @@
     <list default="true" id="76c81f3c-a9bb-4c07-8d63-75540d491089" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Board.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Board.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Board.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Board.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Square.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Square.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/P2_SQUARE.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/P2_SQUARE.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/game.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/game.hpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

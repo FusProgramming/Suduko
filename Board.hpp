@@ -22,11 +22,15 @@ class Board : public CanView {
         ostream& print(ostream& out);
         ostream& printCluster(ostream&);
         void makeClusters();
-    private:
+
+    void mark();
+
+private:
         void getPuzzle(int n, ifstream& strm);
         ifstream& data;
         short int left = '-';
-        void createRow(short j);
+
+    void createRow(short j);
         void createColumn(short k);
         void createBox(short j, short k);
         char getMarkChar(int j, int k) const;

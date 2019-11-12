@@ -138,6 +138,21 @@ ostream& Board::printCluster(ostream& out) {
     return out;
 }
 
+void Board::mark() {
+    short row, col;
+    char ch;
+    cout << "What is the row you want to mark?" << endl;
+    cin >> row;
+    cout << "What is the column you want to mark?" << endl;
+    cin >> col;
+    cout << sub(row,col);
+    cout << "What number do you want to input?" << endl;
+    cin >> ch;
+    sub(row,col).mark(ch);
+    sub(row,col).getValue();
+
+}
+
 //----------------------------------------------------------------
 DiagBoard::DiagBoard(int n, ifstream &strm) : Board(n, strm, 29) {
     DiagBoardOne();

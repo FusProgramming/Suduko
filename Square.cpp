@@ -73,6 +73,7 @@ void Square::mark(char ch) {
 void Square::addCluster(Cluster* pCl) {
     clues.push_back(pCl);
 }
+
 //----------------------------------------------------------------
 void Square::turnOff(int n) {
     short mask = 1 << n;

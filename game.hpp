@@ -26,7 +26,9 @@ class game {
         Board* brd;
         int gSize;
         char gType;
-        const char * menu[6] = {
+    void mark();
+
+    const char * menu[6] = {
             "1. Mark", "2. Undo", "3. Redo", "4. Save Game", "5. Restore Game", "6. Quit"
         };
         const char * menuX = "MmUuRrSsTtQq";

@@ -57,24 +57,7 @@ void game::run() {
             case 'M':
             case 'm':
                 for (;;) {
-                    try {
-                        char row, col, ch;
-                        cout << "What is the row you want to mark?" << endl;
-                        cin >> row;
-                        cout << "What is the column you want to mark?" << endl;
-                        cin >> col;
-                        cout << "What number do you want to input?" << endl;
-                        cin >> ch;
-                        if ((row >= '1' && row <= '9') && (col >= '1' && col <= '9')) {
-                            break;
-                        } else {
-                            throw GameValues(row, col, ch);
-                        }
-                    } catch (GameErrors ex) {
-                        ex.print();
-                    } catch (GameValues ex) {
-                        ex.print();
-                    }
+                    brd->mark();
                     break;
                 }
                 break;
