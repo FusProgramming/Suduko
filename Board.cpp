@@ -157,6 +157,13 @@ void Board::mark() {
 
 }
 
+void Board::restoreState(Frame *frame) {
+    State* states = frame->getState();
+    for(int n = 0; n < N*N; n++ ) {
+        (State&) brd[n] = states[n];
+    }
+}
+
 
 //----------------------------------------------------------------
 DiagBoard::DiagBoard(int n, ifstream &strm) : Board(n, strm, 29) {

@@ -11,6 +11,7 @@
 class Board;
 class Frame {
 public:
+    Frame() = default;
     Frame(Board *brd);
     ~Frame() = default;
     State* getState() { return states;}

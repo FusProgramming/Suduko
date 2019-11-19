@@ -15,6 +15,7 @@
 #include "CanView.hpp"
 #include "Frame.hpp"
 
+class Frame;
 class Board : public CanView {
     public:
         Board(int n, ifstream& strm, int nType) throw (StreamErrors, GameErrors);
@@ -24,6 +25,7 @@ class Board : public CanView {
         ostream& printCluster(ostream&);
         void makeClusters();
         State getSquare(int n) const;
+        void restoreState(Frame* frame);
 
     void mark();
 
