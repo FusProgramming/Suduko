@@ -101,6 +101,12 @@
 		<Unit filename="C:/Users/Rob/CLionProjects/Suduko/Cluster.hpp">
 			<Option target="P2_SQUARE"/>
 		</Unit>
+		<Unit filename="C:/Users/Rob/CLionProjects/Suduko/Frame.cpp">
+			<Option target="P2_SQUARE"/>
+		</Unit>
+		<Unit filename="C:/Users/Rob/CLionProjects/Suduko/Frame.hpp">
+			<Option target="P2_SQUARE"/>
+		</Unit>
 		<Unit filename="C:/Users/Rob/CLionProjects/Suduko/GameErrors.cpp">
 			<Option target="P2_SQUARE"/>
 		</Unit>
@@ -123,6 +129,12 @@
 			<Option target="P2_SQUARE"/>
 		</Unit>
 		<Unit filename="C:/Users/Rob/CLionProjects/Suduko/Square.hpp">
+			<Option target="P2_SQUARE"/>
+		</Unit>
+		<Unit filename="C:/Users/Rob/CLionProjects/Suduko/Stack.cpp">
+			<Option target="P2_SQUARE"/>
+		</Unit>
+		<Unit filename="C:/Users/Rob/CLionProjects/Suduko/Stack.hpp">
 			<Option target="P2_SQUARE"/>
 		</Unit>
 		<Unit filename="C:/Users/Rob/CLionProjects/Suduko/StreamErrors.cpp">

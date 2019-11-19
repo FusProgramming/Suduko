@@ -203,6 +203,33 @@ Cluster.cpp.s:
 	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/Cluster.cpp.s
 .PHONY : Cluster.cpp.s
 
+Frame.obj: Frame.cpp.obj
+
+.PHONY : Frame.obj
+
+# target to build an object file
+Frame.cpp.obj:
+	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/Frame.cpp.obj
+.PHONY : Frame.cpp.obj
+
+Frame.i: Frame.cpp.i
+
+.PHONY : Frame.i
+
+# target to preprocess a source file
+Frame.cpp.i:
+	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/Frame.cpp.i
+.PHONY : Frame.cpp.i
+
+Frame.s: Frame.cpp.s
+
+.PHONY : Frame.s
+
+# target to generate assembly for a file
+Frame.cpp.s:
+	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/Frame.cpp.s
+.PHONY : Frame.cpp.s
+
 GameErrors.obj: GameErrors.cpp.obj
 
 .PHONY : GameErrors.obj
@@ -310,6 +337,33 @@ Square.s: Square.cpp.s
 Square.cpp.s:
 	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/Square.cpp.s
 .PHONY : Square.cpp.s
+
+Stack.obj: Stack.cpp.obj
+
+.PHONY : Stack.obj
+
+# target to build an object file
+Stack.cpp.obj:
+	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/Stack.cpp.obj
+.PHONY : Stack.cpp.obj
+
+Stack.i: Stack.cpp.i
+
+.PHONY : Stack.i
+
+# target to preprocess a source file
+Stack.cpp.i:
+	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/Stack.cpp.i
+.PHONY : Stack.cpp.i
+
+Stack.s: Stack.cpp.s
+
+.PHONY : Stack.s
+
+# target to generate assembly for a file
+Stack.cpp.s:
+	$(MAKE) -f CMakeFiles\P2_SQUARE.dir\build.make CMakeFiles/P2_SQUARE.dir/Stack.cpp.s
+.PHONY : Stack.cpp.s
 
 StreamErrors.obj: StreamErrors.cpp.obj
 
@@ -464,6 +518,9 @@ help:
 	@echo ... Cluster.obj
 	@echo ... Cluster.i
 	@echo ... Cluster.s
+	@echo ... Frame.obj
+	@echo ... Frame.i
+	@echo ... Frame.s
 	@echo ... GameErrors.obj
 	@echo ... GameErrors.i
 	@echo ... GameErrors.s
@@ -476,6 +533,9 @@ help:
 	@echo ... Square.obj
 	@echo ... Square.i
 	@echo ... Square.s
+	@echo ... Stack.obj
+	@echo ... Stack.i
+	@echo ... Stack.s
 	@echo ... StreamErrors.obj
 	@echo ... StreamErrors.i
 	@echo ... StreamErrors.s

@@ -13,6 +13,7 @@
 #include "GameErrors.hpp"
 #include "Cluster.hpp"
 #include "CanView.hpp"
+#include "Frame.hpp"
 
 class Board : public CanView {
     public:
@@ -22,6 +23,7 @@ class Board : public CanView {
         ostream& print(ostream& out);
         ostream& printCluster(ostream&);
         void makeClusters();
+        State getSquare(int n) const;
 
     void mark();
 

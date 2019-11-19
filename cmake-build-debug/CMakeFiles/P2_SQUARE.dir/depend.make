@@ -5,6 +5,7 @@ CMakeFiles/P2_SQUARE.dir/Board.cpp.obj: ../Board.cpp
 CMakeFiles/P2_SQUARE.dir/Board.cpp.obj: ../Board.hpp
 CMakeFiles/P2_SQUARE.dir/Board.cpp.obj: ../CanView.hpp
 CMakeFiles/P2_SQUARE.dir/Board.cpp.obj: ../Cluster.hpp
+CMakeFiles/P2_SQUARE.dir/Board.cpp.obj: ../Frame.hpp
 CMakeFiles/P2_SQUARE.dir/Board.cpp.obj: ../GameErrors.hpp
 CMakeFiles/P2_SQUARE.dir/Board.cpp.obj: ../Square.hpp
 CMakeFiles/P2_SQUARE.dir/Board.cpp.obj: ../StreamErrors.hpp
@@ -20,6 +21,16 @@ CMakeFiles/P2_SQUARE.dir/Cluster.cpp.obj: ../Cluster.cpp
 CMakeFiles/P2_SQUARE.dir/Cluster.cpp.obj: ../Cluster.hpp
 CMakeFiles/P2_SQUARE.dir/Cluster.cpp.obj: ../Square.hpp
 CMakeFiles/P2_SQUARE.dir/Cluster.cpp.obj: ../tools.hpp
+
+CMakeFiles/P2_SQUARE.dir/Frame.cpp.obj: ../Board.hpp
+CMakeFiles/P2_SQUARE.dir/Frame.cpp.obj: ../CanView.hpp
+CMakeFiles/P2_SQUARE.dir/Frame.cpp.obj: ../Cluster.hpp
+CMakeFiles/P2_SQUARE.dir/Frame.cpp.obj: ../Frame.cpp
+CMakeFiles/P2_SQUARE.dir/Frame.cpp.obj: ../Frame.hpp
+CMakeFiles/P2_SQUARE.dir/Frame.cpp.obj: ../GameErrors.hpp
+CMakeFiles/P2_SQUARE.dir/Frame.cpp.obj: ../Square.hpp
+CMakeFiles/P2_SQUARE.dir/Frame.cpp.obj: ../StreamErrors.hpp
+CMakeFiles/P2_SQUARE.dir/Frame.cpp.obj: ../tools.hpp
 
 CMakeFiles/P2_SQUARE.dir/GameErrors.cpp.obj: ../GameErrors.cpp
 CMakeFiles/P2_SQUARE.dir/GameErrors.cpp.obj: ../GameErrors.hpp
@@ -38,6 +49,17 @@ CMakeFiles/P2_SQUARE.dir/Square.cpp.obj: ../Square.cpp
 CMakeFiles/P2_SQUARE.dir/Square.cpp.obj: ../Square.hpp
 CMakeFiles/P2_SQUARE.dir/Square.cpp.obj: ../tools.hpp
 
+CMakeFiles/P2_SQUARE.dir/Stack.cpp.obj: ../Board.hpp
+CMakeFiles/P2_SQUARE.dir/Stack.cpp.obj: ../CanView.hpp
+CMakeFiles/P2_SQUARE.dir/Stack.cpp.obj: ../Cluster.hpp
+CMakeFiles/P2_SQUARE.dir/Stack.cpp.obj: ../Frame.hpp
+CMakeFiles/P2_SQUARE.dir/Stack.cpp.obj: ../GameErrors.hpp
+CMakeFiles/P2_SQUARE.dir/Stack.cpp.obj: ../Square.hpp
+CMakeFiles/P2_SQUARE.dir/Stack.cpp.obj: ../Stack.cpp
+CMakeFiles/P2_SQUARE.dir/Stack.cpp.obj: ../Stack.hpp
+CMakeFiles/P2_SQUARE.dir/Stack.cpp.obj: ../StreamErrors.hpp
+CMakeFiles/P2_SQUARE.dir/Stack.cpp.obj: ../tools.hpp
+
 CMakeFiles/P2_SQUARE.dir/StreamErrors.cpp.obj: ../StreamErrors.cpp
 CMakeFiles/P2_SQUARE.dir/StreamErrors.cpp.obj: ../StreamErrors.hpp
 CMakeFiles/P2_SQUARE.dir/StreamErrors.cpp.obj: ../tools.hpp
@@ -53,6 +75,7 @@ CMakeFiles/P2_SQUARE.dir/Viewer.cpp.obj: ../tools.hpp
 CMakeFiles/P2_SQUARE.dir/game.cpp.obj: ../Board.hpp
 CMakeFiles/P2_SQUARE.dir/game.cpp.obj: ../CanView.hpp
 CMakeFiles/P2_SQUARE.dir/game.cpp.obj: ../Cluster.hpp
+CMakeFiles/P2_SQUARE.dir/game.cpp.obj: ../Frame.hpp
 CMakeFiles/P2_SQUARE.dir/game.cpp.obj: ../GameErrors.hpp
 CMakeFiles/P2_SQUARE.dir/game.cpp.obj: ../Square.hpp
 CMakeFiles/P2_SQUARE.dir/game.cpp.obj: ../StreamErrors.hpp
@@ -64,6 +87,7 @@ CMakeFiles/P2_SQUARE.dir/game.cpp.obj: ../tools.hpp
 CMakeFiles/P2_SQUARE.dir/main.cpp.obj: ../Board.hpp
 CMakeFiles/P2_SQUARE.dir/main.cpp.obj: ../CanView.hpp
 CMakeFiles/P2_SQUARE.dir/main.cpp.obj: ../Cluster.hpp
+CMakeFiles/P2_SQUARE.dir/main.cpp.obj: ../Frame.hpp
 CMakeFiles/P2_SQUARE.dir/main.cpp.obj: ../GameErrors.hpp
 CMakeFiles/P2_SQUARE.dir/main.cpp.obj: ../Square.hpp
 CMakeFiles/P2_SQUARE.dir/main.cpp.obj: ../StreamErrors.hpp

@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/P2_SQUARE.dir/Canvas.cpp.obj"
   "CMakeFiles/P2_SQUARE.dir/GridChar.cpp.obj"
   "CMakeFiles/P2_SQUARE.dir/MixedChar.cpp.obj"
+  "CMakeFiles/P2_SQUARE.dir/Stack.cpp.obj"
+  "CMakeFiles/P2_SQUARE.dir/Frame.cpp.obj"
   "P2_SQUARE.pdb"
   "P2_SQUARE.exe"
   "P2_SQUARE.exe.manifest"

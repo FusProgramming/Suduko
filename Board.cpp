@@ -66,6 +66,10 @@ string Board::getPossibilityString(int j, int k) const{
     return possListStr;
 }
 
+State Board::getSquare(int n) const {
+    return brd[n];
+}
+
 //----------------------------------------------------------------
 void Board::makeClusters() {
     short j, k;
@@ -152,6 +156,7 @@ void Board::mark() {
     sub(row,col).getValue();
 
 }
+
 
 //----------------------------------------------------------------
 DiagBoard::DiagBoard(int n, ifstream &strm) : Board(n, strm, 29) {
