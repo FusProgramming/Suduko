@@ -10,6 +10,7 @@
 
 Frame::Frame(Board* brd) {
     for(int n = 0; n < 81; n++) {
+        states[n] = brd->getSquare(n);
     }
 }
 

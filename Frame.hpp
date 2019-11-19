@@ -8,13 +8,13 @@
 #include "Board.hpp"
 #include "tools.hpp"
 #include "Square.hpp"
-
+class Board;
 class Frame {
 public:
-    Frame(Board* brd);
+    Frame(Board *brd);
     ~Frame() = default;
     State* getState() { return states;}
-    State states[81]{};
+    State states[81];
     State& operator [] (int n);
 
 };
