@@ -9,15 +9,15 @@
 #include "tools.hpp"
 
 template<class T>
-class Stack : vector<T> {
+class Stack : public vector<T> {
 public:
     Stack() = default;
     ~Stack() = default;
 
-    void pop() { vector<T>::pop_back();}
-    Frame* top() { return vector<T>::back();}
-    void push(Frame* frame) { vector<T>::push_back(frame); }
-    int size() { return vector<T>::size();}
+    void pop() { this->pop_back();}
+    Frame* top() { return this->back();}
+    void push(Frame* frame) { this->push_back(frame); }
+    int size() { return (int)vector<T>::size();}
     void zap() {
         for(int n = size(); n > 0; n--) {
             pop();

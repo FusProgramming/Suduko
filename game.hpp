@@ -12,6 +12,7 @@
 #include "StreamErrors.hpp"
 #include "GameErrors.hpp"
 #include "Viewer.hpp"
+#include "Stack.hpp"
 
 class Board;
 class game {
@@ -27,11 +28,16 @@ class game {
         int gSize;
         char gType;
     void mark();
+    void undo_move();
+    void redo_move();
+    Stack<Frame*>undo;
+    Stack<Frame*>redo;
 
     const char * menu[6] = {
             "1. Mark", "2. Undo", "3. Redo", "4. Save Game", "5. Restore Game", "6. Quit"
         };
-        const char * menuX = "MmUuRrSsTtQq";
+        const char * menuX = "123456";
+
 };
 
 inline ostream& operator<<(ostream& out, game& g) {

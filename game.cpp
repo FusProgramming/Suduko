@@ -50,28 +50,33 @@ void game::run() {
         fancyView.show(cout);
         char c = menu_c("Menu", 6, menu, menuX);
         switch (c) {
-            case 'Q':
-            case 'q':
+            case '6':
                 bye();
                 exit(0);
-            case 'M':
-            case 'm':
+            case '1':
+
                 for (;;) {
                     brd->mark();
+                    Frame* frame = new Frame(brd);
+                    undo.push(frame);
+                    redo.zap();
                     break;
                 }
                 break;
-            case 'R':
-            case 'r':
-                cout << "Redo - Unfinished" << endl;
+            case '2':
+                cout << "1" << endl;
+                undo_move();
+                cout << "1" << endl;
                 break;
-            case 'S':
-            case 's':
-                cout << "Save - Unfinished" << endl;
+            case '3':
+                cout << "1" << endl;
+                redo_move();
+                cout << "1" << endl;
                 break;
-            case 'T':
-            case 't':
+            case '4':
                 cout << "Restore - Unfinished" << endl;
+                break;
+            case '5':
                 break;
             default:
                 cout << "Enter a Valid Input" << endl;
@@ -80,6 +85,30 @@ void game::run() {
     }
 }
 
+
+//-------------------------------------------------------------------------
+void game::undo_move() {
+    cout << "1" << endl;
+    if (undo.size() >= 2) {
+        cout << "1" << endl;
+        redo.push(undo.top());
+        undo.pop();cout << "1" << endl;
+        brd->restoreState(undo.top());cout << "1" << endl;
+    }
+}
+//-------------------------------------------------------------------------
+void game::redo_move() {
+    if (redo.size() > 0) {
+
+        cout << "1" << endl;
+        brd->restoreState(redo.top());
+        cout << "1" << endl;
+        undo.push(redo.top());
+        cout << "1" << endl;
+        redo.pop();
+        cout << "1" << endl;
+    }
+}
 
 //----------------------------------------------------------------
 ostream& game::print(ostream& out) {

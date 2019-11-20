@@ -26,7 +26,6 @@ class Board : public CanView {
         void makeClusters();
         State getSquare(int n) const;
         void restoreState(Frame* frame);
-
     void mark();
 
 private:

@@ -79,6 +79,7 @@ CMakeFiles/P2_SQUARE.dir/game.cpp.obj
  C:/Users/Rob/CLionProjects/Suduko/Frame.hpp
  C:/Users/Rob/CLionProjects/Suduko/GameErrors.hpp
  C:/Users/Rob/CLionProjects/Suduko/Square.hpp
+ C:/Users/Rob/CLionProjects/Suduko/Stack.hpp
  C:/Users/Rob/CLionProjects/Suduko/StreamErrors.hpp
  C:/Users/Rob/CLionProjects/Suduko/Viewer.hpp
  C:/Users/Rob/CLionProjects/Suduko/game.cpp
@@ -91,6 +92,7 @@ CMakeFiles/P2_SQUARE.dir/main.cpp.obj
  C:/Users/Rob/CLionProjects/Suduko/Frame.hpp
  C:/Users/Rob/CLionProjects/Suduko/GameErrors.hpp
  C:/Users/Rob/CLionProjects/Suduko/Square.hpp
+ C:/Users/Rob/CLionProjects/Suduko/Stack.hpp
  C:/Users/Rob/CLionProjects/Suduko/StreamErrors.hpp
  C:/Users/Rob/CLionProjects/Suduko/Viewer.hpp
  C:/Users/Rob/CLionProjects/Suduko/game.hpp

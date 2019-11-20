@@ -13,11 +13,17 @@
   <component name="ChangeListManager">
     <list default="true" id="76c81f3c-a9bb-4c07-8d63-75540d491089" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Board.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Board.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Board.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Board.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frame.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Frame.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frame.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Frame.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stack.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Stack.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/P2_SQUARE.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/P2_SQUARE.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/game.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/game.hpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -119,7 +125,7 @@
       <workItem from="1571721227098" duration="17071000" />
       <workItem from="1571869493319" duration="1376000" />
       <workItem from="1572031675193" duration="9236000" />
-      <workItem from="1574195228271" duration="2009000" />
+      <workItem from="1574195228271" duration="7053000" />
     </task>
     <task id="LOCAL-00001" summary="Broken Commit for Game Too Tired to fix">
       <created>1568526355219</created>
@@ -275,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574195932328</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="P9 - getting closer to working">
+      <created>1574197256581</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1574197256581</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
