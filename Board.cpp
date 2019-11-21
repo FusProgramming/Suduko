@@ -141,7 +141,7 @@ ostream& Board::printCluster(ostream& out) {
     }
     return out;
 }
-
+//----------------------------------------------------------------
 void Board::mark() {
     short row, col;
     char ch;
@@ -154,9 +154,9 @@ void Board::mark() {
     cin >> ch;
     sub(row,col).mark(ch);
     sub(row,col).getValue();
-
 }
 
+//----------------------------------------------------------------
 void Board::restoreState(Frame *frame) {
     State* states = frame->getState();
     for(int n = 0; n < N*N; n++ ) {

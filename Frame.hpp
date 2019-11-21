@@ -17,13 +17,10 @@ public:
     State* getState() { return states;}
     State states[81];
     State& operator [] (int n);
-    ostream& print(ostream& out);
-
+    void serialize(ostream& out);
+    void realize(ifstream& in);
 };
 
-inline ostream& operator<< (ostream& out, Frame bs) {
-    bs.print(out);
-    return out;
-}
+
 
 #endif //P2_SQUARE_FRAME_HPP

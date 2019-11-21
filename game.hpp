@@ -27,11 +27,13 @@ class game {
         Board* brd;
         int gSize;
         char gType;
-    void mark();
-    void undo_move();
-    void redo_move();
-    Stack<Frame*>undo;
-    Stack<Frame*>redo;
+        void mark();
+        void undo();
+        void redo();
+        Stack<Frame*>undoMark;
+        Stack<Frame*>redoMark;
+        void save();
+        void load();
 
     const char * menu[6] = {
             "1. Mark", "2. Undo", "3. Redo", "4. Save Game", "5. Restore Game", "6. Quit"

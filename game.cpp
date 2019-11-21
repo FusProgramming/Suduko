@@ -58,25 +58,28 @@ void game::run() {
                 for (;;) {
                     brd->mark();
                     Frame* frame = new Frame(brd);
-                    undo.push(frame);
-                    redo.zap();
+                    undoMark.push(frame);
+                    redoMark.zap();
                     break;
                 }
                 break;
             case '2':
-                cout << "1" << endl;
-                undo_move();
-                cout << "1" << endl;
+                cout << "UNDO IMPLEMENTED" << endl;
+                undo();
                 break;
             case '3':
-                cout << "1" << endl;
-                redo_move();
-                cout << "1" << endl;
+                cout << "\t\tREDO IMPLEMENTED" << endl << endl;
+                redo();
+
                 break;
             case '4':
-                cout << "Restore - Unfinished" << endl;
+                save();
+                cout << "File Saved" << endl;
                 break;
             case '5':
+                load();
+                cout << "File Loaded" << endl;
+
                 break;
             default:
                 cout << "Enter a Valid Input" << endl;
@@ -86,27 +89,20 @@ void game::run() {
 }
 
 
-//-------------------------------------------------------------------------
-void game::undo_move() {
-    cout << "1" << endl;
-    if (undo.size() >= 2) {
-        cout << "1" << endl;
-        redo.push(undo.top());
-        undo.pop();cout << "1" << endl;
-        brd->restoreState(undo.top());cout << "1" << endl;
+//----------------------------------------------------------------
+void game::undo() {
+    if (undoMark.size() >= 2) {
+        redoMark.push(undoMark.top());
+        undoMark.pop();
+        brd->restoreState(undoMark.top());
     }
 }
-//-------------------------------------------------------------------------
-void game::redo_move() {
-    if (redo.size() > 0) {
-
-        cout << "1" << endl;
-        brd->restoreState(redo.top());
-        cout << "1" << endl;
-        undo.push(redo.top());
-        cout << "1" << endl;
-        redo.pop();
-        cout << "1" << endl;
+//----------------------------------------------------------------
+void game::redo() {
+    if (redoMark.size() > 0) {
+        brd->restoreState(redoMark.top());
+        undoMark.push(redoMark.top());
+        redoMark.pop();
     }
 }
 
@@ -114,4 +110,37 @@ void game::redo_move() {
 ostream& game::print(ostream& out) {
     out << *brd;
     return out;
+}
+
+//----------------------------------------------------------------
+void game::save() {
+    try {
+        string fileName;
+        cout << "File Name: ";
+        cin >> fileName;
+        Frame *top = undoMark.top();
+        ofstream out(fileName);
+        top->serialize(out);
+        out.close();
+    } catch (StreamErrors &e) {
+
+}
+}
+//----------------------------------------------------------------
+void game::load() {
+    try {
+        string fileName;
+        cout << "File Name:";
+        cin >> fileName;
+        ifstream input(fileName);
+        undoMark.zap();
+        redoMark.zap();
+        Frame* frame = new Frame(brd);
+        undoMark.push(frame);
+        undoMark.top()->realize(input);
+        brd->restoreState(undoMark.top());
+    } catch(StreamErrors& e) {
+        e.print();
+    }
+
 }
