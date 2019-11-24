@@ -8,7 +8,7 @@
 
 const char* Cluster::clusterName[] = { "row", "col" , "box", "diag"};
 //----------------------------------------------------------------
-Cluster::Cluster(ClusterT type, Square * s[9]) {
+Cluster::Cluster(ClusterT type, Square * s[]){
     cout << "7" << endl;
     cType = type;
     cout << "8" << endl;

@@ -13,14 +13,15 @@
 enum ClusterT {
     row, col, box, diag
 };
+
 class Cluster {
     public:
-        Cluster(ClusterT, Square*[9]);
+        Cluster(ClusterT, Square*[]);
         void print();
         void shoop(char val);
     private:
         ClusterT cType;
-        Square* sArr[9];
+        Square* sArr[6];
         static const char* clusterName[];
 };
 
