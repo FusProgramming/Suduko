@@ -88,7 +88,7 @@ void Board::makeClusters() {
 
 //----------------------------------------------------------------
 void Board::createRow(short j) {
-    Square *rows[9];
+    Square *rows[N];
     for(short p = j; p<= j ; p++) {
         for(short q = 1; q<= N; q++) {
             rows[q-1] = &sub(p,q);
@@ -99,7 +99,7 @@ void Board::createRow(short j) {
 
 //----------------------------------------------------------------
 void Board::createColumn(short k) {
-    Square *cols[9];
+    Square *cols[N];
     for(short q = k; q <= k; q++) {
         for(short p =1; p <= N; p++) {
             cols[p-1] = &sub(p,q);
@@ -109,7 +109,7 @@ void Board::createColumn(short k) {
 }
 //----------------------------------------------------------------
 void Board::createBox(short j, short k) {
-    Square* boxes[9];
+    Square* boxes[N];
     int count = 0;
     for(int row = j; row <= j + 2; row++){
         for(int cell = k; cell <= k + 2; cell++){
@@ -190,4 +190,9 @@ void DiagBoard::DiagBoardTwo() {
         count++;
     }
     clusters.push_back(new Cluster(diag, diagTwo));
+}
+
+//----------------------------------------------------------------
+SixyBoard::SixyBoard(int n, ifstream &strm) {
+
 }

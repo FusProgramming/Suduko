@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/Rob/CLionProjects/Suduko/Board.cpp
+Board.hpp
+C:/Users/Rob/CLionProjects/Suduko/Board.hpp
+
 C:/Users/Rob/CLionProjects/Suduko/Board.hpp
 tools.hpp
 C:/Users/Rob/CLionProjects/Suduko/tools.hpp
@@ -29,6 +33,10 @@ string
 C:/Users/Rob/CLionProjects/Suduko/Cluster.hpp
 Square.hpp
 C:/Users/Rob/CLionProjects/Suduko/Square.hpp
+
+C:/Users/Rob/CLionProjects/Suduko/Frame.cpp
+Frame.hpp
+C:/Users/Rob/CLionProjects/Suduko/Frame.hpp
 
 C:/Users/Rob/CLionProjects/Suduko/Frame.hpp
 Board.hpp
@@ -81,6 +89,18 @@ Viewer.hpp
 C:/Users/Rob/CLionProjects/Suduko/Viewer.hpp
 Stack.hpp
 C:/Users/Rob/CLionProjects/Suduko/Stack.hpp
+
+C:/Users/Rob/CLionProjects/Suduko/main.cpp
+Square.hpp
+C:/Users/Rob/CLionProjects/Suduko/Square.hpp
+game.hpp
+C:/Users/Rob/CLionProjects/Suduko/game.hpp
+Board.hpp
+C:/Users/Rob/CLionProjects/Suduko/Board.hpp
+Cluster.hpp
+C:/Users/Rob/CLionProjects/Suduko/Cluster.hpp
+StreamErrors.hpp
+C:/Users/Rob/CLionProjects/Suduko/StreamErrors.hpp
 
 C:/Users/Rob/CLionProjects/Suduko/tools.hpp
 iostream

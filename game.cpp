@@ -41,6 +41,7 @@ void game::newGame(const string& strm) {
         brd = new DiagBoard(gSize,fName);
     } else if(gType == 's'){
         gSize= 6;
+        //brd = new SixyBoard(gSize, fName);
     }
 }
 //----------------------------------------------------------------

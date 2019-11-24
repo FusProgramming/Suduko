@@ -53,6 +53,18 @@ class DiagBoard : public Board {
 
 
 };
+
+class TradBoard {
+    public:
+
+
+};
+
+class SixyBoard {
+    public:
+        SixyBoard(int n, ifstream& strm);
+        ~SixyBoard() = default;
+};
 inline ostream& operator<< (ostream& out, Board& b) {
     return b.print(out);
 }

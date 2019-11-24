@@ -1,6 +1,9 @@
-//
-// Created by Rob on 11/19/2019.
-//
+// Robert Fus
+// CSCI 6626 - Object-Orientated Principles & Practices
+// Program 9: Undo/Redo
+// File: Frame.hpp
+// 11/18/2019
+
 
 #ifndef P2_SQUARE_FRAME_HPP
 #define P2_SQUARE_FRAME_HPP
