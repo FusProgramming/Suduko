@@ -24,7 +24,6 @@ Cluster::Cluster(ClusterT type, Square * s[]){
 
 }
 
-
 //----------------------------------------------------------------
 void Cluster::shoop(char val) {
     int value = val - '0';

@@ -33,7 +33,7 @@ private:
         ifstream& data;
         short int left = '-';
 
-    void createRow(short j);
+        void createRow(short j);
         void createColumn(short k);
         void createBox(short j, short k);
         char getMarkChar(int j, int k) const;
@@ -48,6 +48,8 @@ class TradBoard : public Board {
     public:
         TradBoard(int n, ifstream& strm, int nType);
         ~TradBoard() = default;
+    private:
+    void createTradBox(short j, short k);
 };
 
 class DiagBoard : public Board {
