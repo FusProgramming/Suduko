@@ -35,13 +35,15 @@ game::~game() {
 void game::newGame(const string& strm) {
     if(gType =='t') {
         gSize= 9;
-        brd = new Board(gSize, fName, 27);
+        brd = new TradBoard(gSize, fName, 27);
+
     } else if(gType == 'd') {
         gSize = 9;
         brd = new DiagBoard(gSize,fName);
     } else if(gType == 's'){
         gSize= 6;
-        //brd = new SixyBoard(gSize, fName);
+        cout << "Do I get here" << endl;
+        brd = new SixyBoard(gSize, fName);
     }
 }
 //----------------------------------------------------------------

@@ -17,9 +17,14 @@ CMakeFiles/P2_SQUARE.dir/Canvas.cpp.obj: ../GridChar.hpp
 CMakeFiles/P2_SQUARE.dir/Canvas.cpp.obj: ../MixedChar.hpp
 CMakeFiles/P2_SQUARE.dir/Canvas.cpp.obj: ../tools.hpp
 
+CMakeFiles/P2_SQUARE.dir/Cluster.cpp.obj: ../Board.hpp
+CMakeFiles/P2_SQUARE.dir/Cluster.cpp.obj: ../CanView.hpp
 CMakeFiles/P2_SQUARE.dir/Cluster.cpp.obj: ../Cluster.cpp
 CMakeFiles/P2_SQUARE.dir/Cluster.cpp.obj: ../Cluster.hpp
+CMakeFiles/P2_SQUARE.dir/Cluster.cpp.obj: ../Frame.hpp
+CMakeFiles/P2_SQUARE.dir/Cluster.cpp.obj: ../GameErrors.hpp
 CMakeFiles/P2_SQUARE.dir/Cluster.cpp.obj: ../Square.hpp
+CMakeFiles/P2_SQUARE.dir/Cluster.cpp.obj: ../StreamErrors.hpp
 CMakeFiles/P2_SQUARE.dir/Cluster.cpp.obj: ../tools.hpp
 
 CMakeFiles/P2_SQUARE.dir/Frame.cpp.obj: ../Board.hpp
@@ -44,21 +49,15 @@ CMakeFiles/P2_SQUARE.dir/MixedChar.cpp.obj: ../MixedChar.cpp
 CMakeFiles/P2_SQUARE.dir/MixedChar.cpp.obj: ../MixedChar.hpp
 CMakeFiles/P2_SQUARE.dir/MixedChar.cpp.obj: ../tools.hpp
 
+CMakeFiles/P2_SQUARE.dir/Square.cpp.obj: ../Board.hpp
+CMakeFiles/P2_SQUARE.dir/Square.cpp.obj: ../CanView.hpp
 CMakeFiles/P2_SQUARE.dir/Square.cpp.obj: ../Cluster.hpp
+CMakeFiles/P2_SQUARE.dir/Square.cpp.obj: ../Frame.hpp
+CMakeFiles/P2_SQUARE.dir/Square.cpp.obj: ../GameErrors.hpp
 CMakeFiles/P2_SQUARE.dir/Square.cpp.obj: ../Square.cpp
 CMakeFiles/P2_SQUARE.dir/Square.cpp.obj: ../Square.hpp
+CMakeFiles/P2_SQUARE.dir/Square.cpp.obj: ../StreamErrors.hpp
 CMakeFiles/P2_SQUARE.dir/Square.cpp.obj: ../tools.hpp
-
-CMakeFiles/P2_SQUARE.dir/Stack.cpp.obj: ../Board.hpp
-CMakeFiles/P2_SQUARE.dir/Stack.cpp.obj: ../CanView.hpp
-CMakeFiles/P2_SQUARE.dir/Stack.cpp.obj: ../Cluster.hpp
-CMakeFiles/P2_SQUARE.dir/Stack.cpp.obj: ../Frame.hpp
-CMakeFiles/P2_SQUARE.dir/Stack.cpp.obj: ../GameErrors.hpp
-CMakeFiles/P2_SQUARE.dir/Stack.cpp.obj: ../Square.hpp
-CMakeFiles/P2_SQUARE.dir/Stack.cpp.obj: ../Stack.cpp
-CMakeFiles/P2_SQUARE.dir/Stack.cpp.obj: ../Stack.hpp
-CMakeFiles/P2_SQUARE.dir/Stack.cpp.obj: ../StreamErrors.hpp
-CMakeFiles/P2_SQUARE.dir/Stack.cpp.obj: ../tools.hpp
 
 CMakeFiles/P2_SQUARE.dir/StreamErrors.cpp.obj: ../StreamErrors.cpp
 CMakeFiles/P2_SQUARE.dir/StreamErrors.cpp.obj: ../StreamErrors.hpp

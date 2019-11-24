@@ -8,11 +8,11 @@
 #define P2_SQUARE_CLUSTER_HPP
 
 #include "Square.hpp"
+#include "Board.hpp"
 
 enum ClusterT {
     row, col, box, diag
 };
-
 class Cluster {
     public:
         Cluster(ClusterT, Square*[9]);

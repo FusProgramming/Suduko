@@ -9,12 +9,21 @@
 const char* Cluster::clusterName[] = { "row", "col" , "box", "diag"};
 //----------------------------------------------------------------
 Cluster::Cluster(ClusterT type, Square * s[9]) {
+    cout << "7" << endl;
     cType = type;
-    for(int j = 0 ; j < 9; j++) {
+    cout << "8" << endl;
+    for(int j = 0 ; j < 6; j++) {
+        cout << "9" << endl;
         sArr[j] = s[j];
+        cout << "10" << endl;
         s[j]->addCluster(this);
+        cout << "11" << endl;
+
     }
+    cout << "12" << endl;
+
 }
+
 
 //----------------------------------------------------------------
 void Cluster::shoop(char val) {

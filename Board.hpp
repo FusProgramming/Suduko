@@ -43,6 +43,13 @@ private:
         Square* brd;
         vector<Cluster*> clusters;
 };
+
+class TradBoard : public Board {
+    public:
+        TradBoard(int n, ifstream& strm, int nType);
+        ~TradBoard() = default;
+};
+
 class DiagBoard : public Board {
     public:
         DiagBoard(int n, ifstream& strm);
@@ -50,17 +57,9 @@ class DiagBoard : public Board {
     private:
         void DiagBoardOne();
         void DiagBoardTwo();
-
-
 };
 
-class TradBoard {
-    public:
-
-
-};
-
-class SixyBoard {
+class SixyBoard : public Board {
     public:
         SixyBoard(int n, ifstream& strm);
         ~SixyBoard() = default;
