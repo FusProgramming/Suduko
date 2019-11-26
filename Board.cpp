@@ -36,8 +36,6 @@ void Board::getPuzzle(int n, ifstream& strm) {
         }
         if (j == 10 && !data.eof()) throw StreamFiles(strm);
     }
-
-    //Breaks here for puzs.txt
     makeClusters();
 
 }
@@ -103,25 +101,7 @@ void Board::createColumn(short k) {
         for(short p =1; p <= N; p++) {
             cols[p-1] = &sub(p,q);
         }
-    clusters.push_back(new Cluster(col, cols));
-    }
-}
-//----------------------------------------------------------------
-void Board::createBox(short j, short k) {
-    Square* boxes[N];
-    int count = 0;
-    for(int row = j; row <= j + 2; row++){
-        for(int cell = k; cell <= k + 2; cell++){
-            boxes[count] = &sub(row,cell);
-            count++;
-        }
-    }
-    Cluster* clust = new Cluster(box, boxes);
-    clusters.push_back(clust);
-    for(int n = 0; n < N; n++) {
-        boxes[n]->addCluster(clust);
-        clust->shoop(boxes[n]->getValue());
-
+        clusters.push_back(new Cluster(col, cols));
     }
 }
 
@@ -166,7 +146,8 @@ void Board::restoreState(Frame *frame) {
 
 
 //----------------------------------------------------------------
-DiagBoard::DiagBoard(int n, ifstream &strm) : Board(n, strm, 29) {
+DiagBoard::DiagBoard(int n, ifstream &strm) : TradBoard(n, strm, 29) {
+    DiagBoardClust();
     DiagBoardOne();
     DiagBoardTwo();
 }
@@ -189,23 +170,52 @@ void DiagBoard::DiagBoardTwo() {
         diagTwo[count] = &brd[sub];
         count++;
     }
-    clusters.push_back(new Cluster(diag, diagTwo));
+    clusters.push_back(new Cluster( diag, diagTwo));
+}
+
+//----------------------------------------------------------------
+void DiagBoard::DiagBoardClust() {
+    short j,k;
+    for(j = 1; j <= N; j+=3){
+        for(k = 1; k <= N; k+=3){
+            Square* boxes[N];
+            int count = 0;
+            for(int row = j; row <= j +2 ; row++){
+                for(int cell = k; cell <= k+2; cell++){
+                    boxes[count] = &sub(row,cell);
+                    count++;
+                }
+            }
+            Cluster* clust = new Cluster(box, boxes);
+            clusters.push_back(clust);
+            for(int n = 0; n < N; n++) {
+                boxes[n]->addCluster(clust);
+                clust->shoop(boxes[n]->getValue());
+            }
+        }
+    }
 }
 
 //----------------------------------------------------------------
 SixyBoard::SixyBoard(int n, ifstream &strm) : Board(n, strm, 29) {
-    short j,k;
-    for(j = 1; j <= N; j+=3) {
+    HSixyBoard();
+    VSixyBoard();
+}
+
+//----------------------------------------------------------------
+void SixyBoard::VSixyBoard() {
+    short j, k;
+    for (j = 1; j <= N; j += 2) {
         for (k = 1; k <= N; k += 3) {
             Square *boxes[N];
             int count = 0;
-            for (int row = j; row <= j + 2; row++) {
+            for (int row = j; row <= j + 1; row++) {
                 for (int cell = k; cell <= k + 2; cell++) {
                     boxes[count] = &sub(row, cell);
                     count++;
                 }
             }
-            Cluster *clust = new Cluster(box, boxes);
+            Cluster *clust = new Cluster(vBox, boxes);
             clusters.push_back(clust);
             for (int n = 0; n < N; n++) {
                 boxes[n]->addCluster(clust);
@@ -215,14 +225,37 @@ SixyBoard::SixyBoard(int n, ifstream &strm) : Board(n, strm, 29) {
     }
 }
 //----------------------------------------------------------------
+void SixyBoard::HSixyBoard() {
+    short j, k;
+    for (j = 1; j <= N; j += 3) {
+        for (k = 1; k <= N; k += 2) {
+            Square *boxes[N];
+            int count = 0;
+            for (int row = j; row <= j + 3 ; row++) {
+                for (int cell = k; cell <= k + 1; cell++) {
+                    boxes[count] = &sub(row, cell);
+                    count++;
+                }
+            }
+            Cluster *clust = new Cluster(hBox, boxes);
+            clusters.push_back(clust);
+            for (int n = 0; n < N; n++) {
+                boxes[n]->addCluster(clust);
+                clust->shoop(boxes[n]->getValue());
+            }
+        }
+    }
+}
+
+//----------------------------------------------------------------
 TradBoard::TradBoard(int n, ifstream &strm, int nType) : Board(n, strm, 29) {
     short j,k;
-    for(j = 1; j <= N; j+=4){
-        for(k = 1; k <= N; k+=4){
+    for(j = 1; j <= N; j+=3){
+        for(k = 1; k <= N; k+=3){
             Square* boxes[N];
             int count = 0;
-            for(int row = j; row <= j ; row++){
-                for(int cell = k; cell <= k; cell++){
+            for(int row = j; row <= j +2 ; row++){
+                for(int cell = k; cell <= k+2; cell++){
                     boxes[count] = &sub(row,cell);
                     count++;
                 }

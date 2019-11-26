@@ -11,12 +11,12 @@
 #include "Board.hpp"
 
 enum ClusterT {
-    row, col, box, diag
+    row, col, box, diag, hBox, vBox
 };
 
-class Cluster {
+class Cluster{
     public:
-        Cluster(ClusterT, Square*[]);
+        Cluster(ClusterT type, Square *s[]);
         void print();
         void shoop(char val);
     private:

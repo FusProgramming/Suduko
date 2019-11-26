@@ -42,22 +42,26 @@ void game::newGame(const string& strm) {
         brd = new DiagBoard(gSize,fName);
     } else if(gType == 's'){
         gSize= 6;
-        cout << "Do I get here" << endl;
         brd = new SixyBoard(gSize, fName);
     }
 }
 //----------------------------------------------------------------
 void game::run() {
     for (;;) {
-        Viewer fancyView(9,9, *brd);
-        fancyView.show(cout);
+        if(gType == 's') {
+            Viewer fancyView(6,6, *brd);
+            fancyView.show(cout);
+        } else {
+            Viewer fancyView(9,9, *brd);
+            fancyView.show(cout);
+        }
+
         char c = menu_c("Menu", 6, menu, menuX);
         switch (c) {
             case '6':
                 bye();
                 exit(0);
             case '1':
-
                 for (;;) {
                     brd->mark();
                     Frame* frame = new Frame(brd);

@@ -6,21 +6,16 @@
 
 #include "Cluster.hpp"
 
-const char* Cluster::clusterName[] = { "row", "col" , "box", "diag"};
+const char* Cluster::clusterName[] = { "row", "col" , "box", "diag", "vbox" , "hbox"};
+
 //----------------------------------------------------------------
-Cluster::Cluster(ClusterT type, Square * s[]){
-    cout << "7" << endl;
+Cluster::Cluster(ClusterT type, Square *s[]){
     cType = type;
-    cout << "8" << endl;
     for(int j = 0 ; j < 6; j++) {
-        cout << "9" << endl;
         sArr[j] = s[j];
-        cout << "10" << endl;
         s[j]->addCluster(this);
-        cout << "11" << endl;
 
     }
-    cout << "12" << endl;
 
 }
 

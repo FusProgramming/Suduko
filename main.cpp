@@ -64,18 +64,3 @@ void testSquare() {
 }
 
 //----------------------------------------------------------------
-void testCluster() {
-    Square* rows[9];
-    int count = 0;
-    cout << "BUILDING ROW" << endl;
-    for (char ch = 1; ch <= 9; ch++) {
-        rows[count++] = new Square('-', 1, ch);
-        cout << endl;
-    }
-    Cluster cluster(row,rows);
-    cout << cluster << endl;
-    rows[3]->mark('5');
-    cout << cluster << endl;
-    rows[7]->mark('2');
-    cout << cluster << endl;
-}

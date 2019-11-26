@@ -26,16 +26,13 @@ class Board : public CanView {
         void makeClusters();
         State getSquare(int n) const;
         void restoreState(Frame* frame);
-    void mark();
-
-private:
+        void mark();
+    private:
         void getPuzzle(int n, ifstream& strm);
         ifstream& data;
         short int left = '-';
-
         void createRow(short j);
         void createColumn(short k);
-        void createBox(short j, short k);
         char getMarkChar(int j, int k) const;
         string getPossibilityString(int j, int k) const;
     protected:
@@ -52,19 +49,24 @@ class TradBoard : public Board {
     void createTradBox(short j, short k);
 };
 
-class DiagBoard : public Board {
+class DiagBoard : public TradBoard {
     public:
         DiagBoard(int n, ifstream& strm);
         ~DiagBoard()= default;
     private:
         void DiagBoardOne();
         void DiagBoardTwo();
+
+    void DiagBoardClust();
 };
 
 class SixyBoard : public Board {
     public:
         SixyBoard(int n, ifstream& strm);
         ~SixyBoard() = default;
+    private:
+        void HSixyBoard();
+        void VSixyBoard();
 };
 inline ostream& operator<< (ostream& out, Board& b) {
     return b.print(out);
