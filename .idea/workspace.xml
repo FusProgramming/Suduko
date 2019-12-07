@@ -19,8 +19,9 @@
       <change beforePath="$PROJECT_DIR$/Cluster.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Cluster.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/P2_SQUARE.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/P2_SQUARE.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/P2_SQUARE.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/game.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/game.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/game.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -124,7 +125,10 @@
       <workItem from="1571721227098" duration="17071000" />
       <workItem from="1571869493319" duration="1376000" />
       <workItem from="1572031675193" duration="9236000" />
-      <workItem from="1574195228271" duration="36847000" />
+      <workItem from="1574195228271" duration="38808000" />
+      <workItem from="1574783299027" duration="3542000" />
+      <workItem from="1574892991726" duration="1819000" />
+      <workItem from="1574975606826" duration="39223000" />
     </task>
     <task id="LOCAL-00001" summary="Broken Commit for Game Too Tired to fix">
       <created>1568526355219</created>
@@ -329,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574633427386</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="P11 - Working">
+      <created>1574731467775</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1574731467775</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,7 +381,8 @@
     <MESSAGE value="P10" />
     <MESSAGE value="P11 Attempting to get it to work" />
     <MESSAGE value="P11 Attempting to get it to work - Need to work on clusters" />
-    <option name="LAST_COMMIT_MESSAGE" value="P11 Attempting to get it to work - Need to work on clusters" />
+    <MESSAGE value="P11 - Working" />
+    <option name="LAST_COMMIT_MESSAGE" value="P11 - Working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

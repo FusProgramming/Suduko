@@ -19,7 +19,10 @@ class Frame;
 class Board : public CanView {
     public:
         Board(int n, ifstream& strm, int nType) throw (StreamErrors, GameErrors);
-        ~Board();
+
+    Board();
+
+    ~Board();
         Square& sub(int j, int k);
         ostream& print(ostream& out);
         ostream& printCluster(ostream&);

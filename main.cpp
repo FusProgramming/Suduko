@@ -6,7 +6,6 @@
 
 #include "Square.hpp"
 #include "game.hpp"
-#include "Board.hpp"
 #include "Cluster.hpp"
 #include "StreamErrors.hpp"
 

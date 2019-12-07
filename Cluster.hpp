@@ -7,23 +7,27 @@
 #ifndef P2_SQUARE_CLUSTER_HPP
 #define P2_SQUARE_CLUSTER_HPP
 
-#include "Square.hpp"
+
 #include "Board.hpp"
+#include "Square.hpp"
 
 enum ClusterT {
     row, col, box, diag, hBox, vBox
 };
-
+class Board;
 class Cluster{
     public:
-        Cluster(ClusterT type, Square *s[]);
+        Cluster(ClusterT type, const vector<Square *>& squares);
         void print();
         void shoop(char val);
     private:
+        vector<Square *> sArr;
         ClusterT cType;
-        Square* sArr[6];
+        void addSquare(Square *sq);
         static const char* clusterName[];
+
 };
+
 
 inline ostream& operator<< (ostream& out, Cluster& cl) {
     cl.print();

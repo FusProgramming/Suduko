@@ -5,18 +5,17 @@
 // 10/15/2019
 
 #include "Cluster.hpp"
+#include "Board.hpp"
 
-const char* Cluster::clusterName[] = { "row", "col" , "box", "diag", "vbox" , "hbox"};
+const char* Cluster::clusterName[] = { "row", "col" , "box", "diag", "hbox", "vbox"};
 
 //----------------------------------------------------------------
-Cluster::Cluster(ClusterT type, Square *s[]){
+Cluster::Cluster(ClusterT type, const vector<Square *>& sArr) {
     cType = type;
-    for(int j = 0 ; j < 6; j++) {
-        sArr[j] = s[j];
-        s[j]->addCluster(this);
-
+    for (Square *sq : sArr) {
+        addSquare(sq);
+        sq->addCluster(this);
     }
-
 }
 
 //----------------------------------------------------------------
@@ -35,4 +34,11 @@ void Cluster::print() {
         cout << endl;
     }
 }
+
+//----------------------------------------------------------------
+void Cluster::addSquare(Square *sq) {
+    sArr.push_back(sq);
+}
+
+
 

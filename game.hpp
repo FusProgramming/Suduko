@@ -8,7 +8,6 @@
 #define P2_SQUARE_GAME_HPP
 
 #include "tools.hpp"
-#include "Board.hpp"
 #include "StreamErrors.hpp"
 #include "GameErrors.hpp"
 #include "Viewer.hpp"

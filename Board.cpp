@@ -9,9 +9,11 @@
 //----------------------------------------------------------------
 Board::Board(int n, ifstream& strm, int nType) throw (StreamErrors, GameErrors) : N(n), data(strm) {
     cout << "Board Constructing" << endl;
+    cout << n << endl;
     if(!data.is_open()) {
         throw StreamFiles(strm);
     }
+
     getPuzzle(n, strm);
 }
 
@@ -64,6 +66,9 @@ string Board::getPossibilityString(int j, int k) const{
             possListStr.append(to_string(n));
         }
     }
+    possListStr.push_back(' ');
+    possListStr.push_back(' ');
+
     return possListStr;
 }
 
@@ -84,7 +89,7 @@ void Board::makeClusters() {
 
 //----------------------------------------------------------------
 void Board::createRow(short j) {
-    Square *rows[N];
+    vector<Square*> rows(N);
     for(short p = j; p<= j ; p++) {
         for(short q = 1; q<= N; q++) {
             rows[q-1] = &sub(p,q);
@@ -96,7 +101,7 @@ void Board::createRow(short j) {
 
 //----------------------------------------------------------------
 void Board::createColumn(short k) {
-    Square *cols[N];
+    vector<Square*> cols(N);
     for(short q = k; q <= k; q++) {
         for(short p =1; p <= N; p++) {
             cols[p-1] = &sub(p,q);
@@ -145,6 +150,8 @@ void Board::restoreState(Frame *frame) {
 }
 
 
+
+
 //----------------------------------------------------------------
 DiagBoard::DiagBoard(int n, ifstream &strm) : TradBoard(n, strm, 29) {
     DiagBoardClust();
@@ -153,7 +160,7 @@ DiagBoard::DiagBoard(int n, ifstream &strm) : TradBoard(n, strm, 29) {
 }
 //----------------------------------------------------------------
 void DiagBoard::DiagBoardOne() {
-    Square* diagOne[N];
+    vector<Square*> diagOne(N);
     int count = 0;
     for(int sub = 0; sub < N*N; sub+=10){
         diagOne[count] = &brd[sub];
@@ -164,13 +171,13 @@ void DiagBoard::DiagBoardOne() {
 
 //----------------------------------------------------------------
 void DiagBoard::DiagBoardTwo() {
-    Square* diagTwo[N];
+    vector<Square*> diagTwo(N);
     int count = 0;
     for(int sub = 8; sub < N*N; sub+=8){
         diagTwo[count] = &brd[sub];
         count++;
     }
-    clusters.push_back(new Cluster( diag, diagTwo));
+    clusters.push_back(new Cluster(diag, diagTwo));
 }
 
 //----------------------------------------------------------------
@@ -178,7 +185,7 @@ void DiagBoard::DiagBoardClust() {
     short j,k;
     for(j = 1; j <= N; j+=3){
         for(k = 1; k <= N; k+=3){
-            Square* boxes[N];
+            vector<Square*> boxes(N);
             int count = 0;
             for(int row = j; row <= j +2 ; row++){
                 for(int cell = k; cell <= k+2; cell++){
@@ -207,7 +214,7 @@ void SixyBoard::VSixyBoard() {
     short j, k;
     for (j = 1; j <= N; j += 2) {
         for (k = 1; k <= N; k += 3) {
-            Square *boxes[N];
+            vector<Square*> boxes(N);
             int count = 0;
             for (int row = j; row <= j + 1; row++) {
                 for (int cell = k; cell <= k + 2; cell++) {
@@ -229,7 +236,7 @@ void SixyBoard::HSixyBoard() {
     short j, k;
     for (j = 1; j <= N; j += 3) {
         for (k = 1; k <= N; k += 2) {
-            Square *boxes[N];
+            vector<Square*> boxes(N);
             int count = 0;
             for (int row = j; row <= j + 3 ; row++) {
                 for (int cell = k; cell <= k + 1; cell++) {
@@ -252,7 +259,7 @@ TradBoard::TradBoard(int n, ifstream &strm, int nType) : Board(n, strm, 29) {
     short j,k;
     for(j = 1; j <= N; j+=3){
         for(k = 1; k <= N; k+=3){
-            Square* boxes[N];
+            vector<Square*> boxes(N);
             int count = 0;
             for(int row = j; row <= j +2 ; row++){
                 for(int cell = k; cell <= k+2; cell++){
