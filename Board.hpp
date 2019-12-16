@@ -18,11 +18,8 @@
 class Frame;
 class Board : public CanView {
     public:
-        Board(int n, ifstream& strm, int nType) throw (StreamErrors, GameErrors);
-
-    Board();
-
-    ~Board();
+        Board(int n, ifstream& strm, int nType);
+        ~Board();
         Square& sub(int j, int k);
         ostream& print(ostream& out);
         ostream& printCluster(ostream&);
@@ -48,8 +45,6 @@ class TradBoard : public Board {
     public:
         TradBoard(int n, ifstream& strm, int nType);
         ~TradBoard() = default;
-    private:
-    void createTradBox(short j, short k);
 };
 
 class DiagBoard : public TradBoard {
@@ -59,8 +54,7 @@ class DiagBoard : public TradBoard {
     private:
         void DiagBoardOne();
         void DiagBoardTwo();
-
-    void DiagBoardClust();
+        void DiagBoardClust();
 };
 
 class SixyBoard : public Board {
@@ -71,6 +65,7 @@ class SixyBoard : public Board {
         void HSixyBoard();
         void VSixyBoard();
 };
+
 inline ostream& operator<< (ostream& out, Board& b) {
     return b.print(out);
 }

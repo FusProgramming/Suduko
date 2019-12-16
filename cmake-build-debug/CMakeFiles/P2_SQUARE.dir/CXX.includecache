@@ -6,53 +6,11 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Rob/CLionProjects/Suduko/Board.cpp
-Board.hpp
-C:/Users/Rob/CLionProjects/Suduko/Board.hpp
-
-C:/Users/Rob/CLionProjects/Suduko/Board.hpp
-tools.hpp
-C:/Users/Rob/CLionProjects/Suduko/tools.hpp
-Square.hpp
-C:/Users/Rob/CLionProjects/Suduko/Square.hpp
-StreamErrors.hpp
-C:/Users/Rob/CLionProjects/Suduko/StreamErrors.hpp
+C:/Users/Rob/CLionProjects/Suduko/GameErrors.cpp
 GameErrors.hpp
 C:/Users/Rob/CLionProjects/Suduko/GameErrors.hpp
-Cluster.hpp
-C:/Users/Rob/CLionProjects/Suduko/Cluster.hpp
-CanView.hpp
-C:/Users/Rob/CLionProjects/Suduko/CanView.hpp
-Frame.hpp
-C:/Users/Rob/CLionProjects/Suduko/Frame.hpp
-
-C:/Users/Rob/CLionProjects/Suduko/CanView.hpp
-string
--
-
-C:/Users/Rob/CLionProjects/Suduko/Cluster.hpp
-Board.hpp
-C:/Users/Rob/CLionProjects/Suduko/Board.hpp
-Square.hpp
-C:/Users/Rob/CLionProjects/Suduko/Square.hpp
-
-C:/Users/Rob/CLionProjects/Suduko/Frame.hpp
-Board.hpp
-C:/Users/Rob/CLionProjects/Suduko/Board.hpp
-tools.hpp
-C:/Users/Rob/CLionProjects/Suduko/tools.hpp
-Square.hpp
-C:/Users/Rob/CLionProjects/Suduko/Square.hpp
 
 C:/Users/Rob/CLionProjects/Suduko/GameErrors.hpp
-tools.hpp
-C:/Users/Rob/CLionProjects/Suduko/tools.hpp
-
-C:/Users/Rob/CLionProjects/Suduko/Square.hpp
-tools.hpp
-C:/Users/Rob/CLionProjects/Suduko/tools.hpp
-
-C:/Users/Rob/CLionProjects/Suduko/StreamErrors.hpp
 tools.hpp
 C:/Users/Rob/CLionProjects/Suduko/tools.hpp
 

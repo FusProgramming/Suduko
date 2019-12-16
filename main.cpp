@@ -25,11 +25,7 @@ int main(int argc, const char * argv[]) {
                 game game(strm);
                 game.print(cout);
                 game.run();
-            } catch ( StreamErrors ex) {
-                ex.print();
-            } catch ( StreamFiles ex) {
-                ex.print();
-            } catch ( StreamBoard ex) {
+            } catch ( StreamErrors& ex) {
                 ex.print();
             }
     }

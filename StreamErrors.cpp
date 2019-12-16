@@ -26,11 +26,11 @@ void StreamFiles::print() {
 }
 
 //----------------------------------------------------------------
-StreamBoard::StreamBoard(ifstream& strm) : StreamErrors(strm){
-    cerr << "Stream Board Error Indicated" << endl;
+StreamLoad::StreamLoad(ifstream& strm) : StreamErrors(strm){
+    cerr << "Stream Files Error Indicated" << endl;
 }
 
 //----------------------------------------------------------------
-void StreamBoard::print() {
-    cerr << "Stream Error: Incorrect information in File" << endl;
+void StreamLoad::print() {
+    cerr << "Stream Error: File Wont Load" << endl;
 }

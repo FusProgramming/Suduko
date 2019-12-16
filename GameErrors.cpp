@@ -20,10 +20,10 @@ void GameErrors::print() {
 //----------------------------------------------------------------
 GameValues::GameValues(int row, int col, char ch) : GameErrors(j, k, val){
     cerr << "Game Value Error Indicated" << endl;
+    cerr << "Input: ["<< row << ", " << col << "] Value: " << ch << endl;
 }
 
 //----------------------------------------------------------------
 void GameValues::print() {
-    cerr << "Incorrect Value" << endl;
-    cerr << "Input: [" << j << ", " << k << "] Value: " << val << endl;
+    cerr << "Incorrect Value: Out of Scope " << endl;
 }

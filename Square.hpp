@@ -39,7 +39,6 @@ class Square : public State {
     private:
         short int col, row;
         vector<Cluster*> clues;
-
 };
 
 inline ostream& operator<< (ostream& out, State st) {

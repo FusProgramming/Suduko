@@ -77,7 +77,6 @@ void game::run() {
             case '3':
                 cout << "\t\tREDO IMPLEMENTED" << endl << endl;
                 redo();
-
                 break;
             case '4':
                 save();
@@ -85,8 +84,6 @@ void game::run() {
                 break;
             case '5':
                 load();
-                cout << "File Loaded" << endl;
-
                 break;
             default:
                 cout << "Enter a Valid Input" << endl;
@@ -94,7 +91,6 @@ void game::run() {
         }
     }
 }
-
 
 //----------------------------------------------------------------
 void game::undo() {
@@ -121,7 +117,6 @@ ostream& game::print(ostream& out) {
 
 //----------------------------------------------------------------
 void game::save() {
-    try {
         string fileName;
         cout << "File Name: ";
         cin >> fileName;
@@ -129,9 +124,6 @@ void game::save() {
         ofstream out(fileName);
         top->serialize(out);
         out.close();
-    } catch (StreamErrors &e) {
-
-}
 }
 //----------------------------------------------------------------
 void game::load() {
@@ -144,10 +136,14 @@ void game::load() {
         redoMark.zap();
         Frame* frame = new Frame(brd);
         undoMark.push(frame);
+        if(!input.is_open()) {
+            throw StreamLoad(input);
+        }
         undoMark.top()->realize(input);
         brd->restoreState(undoMark.top());
-    } catch(StreamErrors& e) {
-        e.print();
+        cout << "File Loaded" << endl;
+    } catch(StreamLoad& ex) {
+        ex.print();
     }
 
 }

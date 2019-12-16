@@ -21,10 +21,9 @@ class StreamFiles : public StreamErrors {
         virtual void print();
 };
 
-//----------------------------------------------------------------
-class StreamBoard : public StreamErrors {
+class StreamLoad: public StreamErrors {
     public:
-        StreamBoard(ifstream& strm);
+        StreamLoad(ifstream& strm);
         virtual void print();
 };
 
