@@ -10,11 +10,11 @@
 const char* Cluster::clusterName[] = { "row", "col" , "box", "diag", "hbox", "vbox"};
 
 //----------------------------------------------------------------
-Cluster::Cluster(ClusterT type, const vector<Square *>& sArr) {
+Cluster::Cluster(ClusterT type, Square* sq[], const int size) : size(size) {
     cType = type;
-    for (Square *sq : sArr) {
-        addSquare(sq);
-        sq->addCluster(this);
+    for (int j = 0; j < size; j++) {
+        addSquare(sq[j]);
+        sq[j]->addCluster(this);
     }
 }
 
@@ -39,6 +39,5 @@ void Cluster::print() {
 void Cluster::addSquare(Square *sq) {
     sArr.push_back(sq);
 }
-
 
 

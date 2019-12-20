@@ -19,7 +19,7 @@ public:
     ~Frame() = default;
     State* getState() { return states;}
     State states[81];
-    State& operator [] (int n);
+    State& operator [] (int n); //SubScript operator to access elemtns in array style
     void serialize(ostream& out);
     void realize(ifstream& in);
 };

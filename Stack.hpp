@@ -16,11 +16,11 @@ class Stack : public vector<T> {
     public:
         Stack() = default;
         ~Stack() = default;
-        void pop() { vector<T>::pop_back();}
-        Frame* top() { return vector<T>::back();}
-        void push(Frame* frame) { vector<T>::push_back(frame); }
-        int size() { return vector<T>::size();}
-        void zap() {
+        inline void pop() { vector<T>::pop_back();}
+        inline Frame* top() { return vector<T>::back();}
+        inline void push(Frame* frame) { vector<T>::push_back(frame); }
+        inline int size() { return vector<T>::size();}
+        inline void zap() {
             for(int n = size(); n > 0; n--) {
                 pop();
             }

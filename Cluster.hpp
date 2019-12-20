@@ -17,7 +17,7 @@ enum ClusterT {
 class Board;
 class Cluster{
     public:
-        Cluster(ClusterT type, const vector<Square *>& squares);
+        Cluster(ClusterT type, Square* sq[], const int size);
         void print();
         void shoop(char val);
     private:
@@ -25,9 +25,8 @@ class Cluster{
         ClusterT cType;
         void addSquare(Square *sq);
         static const char* clusterName[];
-
+        int size;
 };
-
 
 inline ostream& operator<< (ostream& out, Cluster& cl) {
     cl.print();

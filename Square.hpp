@@ -34,8 +34,8 @@ class Square : public State {
         ostream& print(ostream&);
         void addCluster(Cluster * pCl);
         void turnOff(int n);
-        char getValue(){ return value; }
-        short getPossList() { return possList; }
+        inline char getValue(){ return value; }
+        inline short getPossList() { return possList; }
     private:
         short int col, row;
         vector<Cluster*> clues;

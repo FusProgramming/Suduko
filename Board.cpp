@@ -89,24 +89,24 @@ void Board::makeClusters() {
 
 //----------------------------------------------------------------
 void Board::createRow(short j) {
-    vector<Square*> rows(N);
+    Square* rows[N];
     for(short p = j; p<= j ; p++) {
         for(short q = 1; q<= N; q++) {
             rows[q-1] = &sub(p,q);
         }
-        clusters.push_back(new Cluster(row, rows));
+        clusters.push_back(new Cluster(row, rows, N));
 
     }
 }
 
 //----------------------------------------------------------------
 void Board::createColumn(short k) {
-    vector<Square*> cols(N);
+    Square* cols[N];
     for(short q = k; q <= k; q++) {
         for(short p =1; p <= N; p++) {
             cols[p-1] = &sub(p,q);
         }
-        clusters.push_back(new Cluster(col, cols));
+        clusters.push_back(new Cluster(col, cols, N));
     }
 }
 
@@ -165,24 +165,24 @@ DiagBoard::DiagBoard(int n, ifstream &strm) : TradBoard(n, strm, 29) {
 }
 //----------------------------------------------------------------
 void DiagBoard::DiagBoardOne() {
-    vector<Square*> diagOne(N);
+    Square* diagOne[N];
     int count = 0;
     for(int sub = 0; sub < N*N; sub+=10){
         diagOne[count] = &brd[sub];
         count++;
     }
-    clusters.push_back(new Cluster(diag, diagOne));
+    clusters.push_back(new Cluster(diag, diagOne, N));
 }
 
 //----------------------------------------------------------------
 void DiagBoard::DiagBoardTwo() {
-    vector<Square*> diagTwo(N);
+    Square* diagTwo[N];
     int count = 0;
     for(int sub = 8; sub < N*N; sub+=8){
         diagTwo[count] = &brd[sub];
         count++;
     }
-    clusters.push_back(new Cluster(diag, diagTwo));
+    clusters.push_back(new Cluster(diag, diagTwo, N));
 }
 
 //----------------------------------------------------------------
@@ -190,7 +190,7 @@ void DiagBoard::DiagBoardClust() {
     short j,k;
     for(j = 1; j <= N; j+=3){
         for(k = 1; k <= N; k+=3){
-            vector<Square*> boxes(N);
+            Square* boxes[N];
             int count = 0;
             for(int row = j; row <= j +2 ; row++){
                 for(int cell = k; cell <= k+2; cell++){
@@ -198,7 +198,7 @@ void DiagBoard::DiagBoardClust() {
                     count++;
                 }
             }
-            Cluster* clust = new Cluster(box, boxes);
+            Cluster* clust = new Cluster(box, boxes, N);
             clusters.push_back(clust);
             for(int n = 0; n < N; n++) {
                 boxes[n]->addCluster(clust);
@@ -219,7 +219,7 @@ void SixyBoard::VSixyBoard() {
     short j, k;
     for (j = 1; j <= N; j += 2) {
         for (k = 1; k <= N; k += 3) {
-            vector<Square*> boxes(N);
+            Square* boxes[N];
             int count = 0;
             for (int row = j; row <= j + 1; row++) {
                 for (int cell = k; cell <= k + 2; cell++) {
@@ -227,7 +227,7 @@ void SixyBoard::VSixyBoard() {
                     count++;
                 }
             }
-            Cluster *clust = new Cluster(vBox, boxes);
+            Cluster *clust = new Cluster(vBox, boxes, N);
             clusters.push_back(clust);
             for (int n = 0; n < N; n++) {
                 boxes[n]->addCluster(clust);
@@ -241,7 +241,7 @@ void SixyBoard::HSixyBoard() {
     short j, k;
     for (j = 1; j <= N; j += 3) {
         for (k = 1; k <= N; k += 2) {
-            vector<Square*> boxes(N);
+            Square* boxes[N];
             int count = 0;
             for (int row = j; row <= j + 3 ; row++) {
                 for (int cell = k; cell <= k + 1; cell++) {
@@ -249,7 +249,7 @@ void SixyBoard::HSixyBoard() {
                     count++;
                 }
             }
-            Cluster *clust = new Cluster(hBox, boxes);
+            Cluster *clust = new Cluster(hBox, boxes, N);
             clusters.push_back(clust);
             for (int n = 0; n < N; n++) {
                 boxes[n]->addCluster(clust);
@@ -264,7 +264,7 @@ TradBoard::TradBoard(int n, ifstream &strm, int nType) : Board(n, strm, 29) {
     short j,k;
     for(j = 1; j <= N; j+=3){
         for(k = 1; k <= N; k+=3){
-            vector<Square*> boxes(N);
+            Square* boxes[N];
             int count = 0;
             for(int row = j; row <= j +2 ; row++){
                 for(int cell = k; cell <= k+2; cell++){
@@ -272,7 +272,7 @@ TradBoard::TradBoard(int n, ifstream &strm, int nType) : Board(n, strm, 29) {
                     count++;
                 }
             }
-            Cluster* clust = new Cluster(box, boxes);
+            Cluster* clust = new Cluster(box, boxes, N);
             clusters.push_back(clust);
             for(int n = 0; n < N; n++) {
                 boxes[n]->addCluster(clust);
